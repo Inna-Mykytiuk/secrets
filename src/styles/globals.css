@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgba(211, 211, 211, 0.603);
+  min-height: 100vh;
+  width: 100%;
+}
+
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* chrome */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* firefox */
+html {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 100%;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* .heroSection {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+    url("../assets/images/sections/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440) {
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+@layer utilities {
+  /* .max-container {
+    @apply mx-auto my-0 max-w-[1440px] w-full;
+  }
+
+  .padding-container {
+    @apply px-6 lg:px-10;
+  } */
+
+  .section {
+    @apply flex min-h-screen flex-col items-center;
+  }
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexStart {
+    @apply flex items-center justify-start;
+  }
+
+  .flexEnd {
+    @apply flex items-center justify-end;
+  }
+
+  .flexColumn {
+    @apply flex flex-col justify-between;
+  }
+
+  .textNormal {
+    @apply font-normal text-sm;
+  }
+}
