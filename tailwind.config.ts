@@ -17,8 +17,7 @@ module.exports = {
       //     "url('http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back05.jpg')",
       // },
       backgroundImage: () => ({
-        hero: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(../assets/images/sections/hero.png)`,
-        heroIn: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('/assets/images/sections/hero.png')`,
+        hero: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/hero.jpg)`,
         about: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/weAre.png')`,
         aboutMob: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/weAreMob1.png')`,
         aboutMob1: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/weAreMob.png')`,
@@ -26,6 +25,11 @@ module.exports = {
         contactUs: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/contactUs.png')`,
         ourGallery: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/ourGallery.png')`,
         image: "url(/contactUs.jpg)",
+        images: "url(/sections/contactUs.jpg)",
+        // herobg: "url(/sections/hero.jpg)",
+        // herobg: "url(/sections/hero.jpg)",
+        // herobg: "url(/hero.jpg)",
+        herobg: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/hero.jpg)`,
       }),
       backgroundColor: {
         white: "#fff",
