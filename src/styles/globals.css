@@ -84,18 +84,18 @@ img {
   margin: 0 auto;
 }
 
-/* .heroSection {
-  min-height: 100vh;
+.heroSection {
   height: 100%;
   width: 100%;
   background: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
     url("../assets/images/sections/hero.png");
-  background: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
-    url("../assets/images/sections/hero.png");
+  /* background: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+  url("../assets/images/sections/hero.png"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+  /* min-height: 100vh; */
+}
 
 @media screen and (min-width: 480px) {
   .container {

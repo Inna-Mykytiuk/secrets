@@ -5,7 +5,6 @@ import Navbar from '../components/Header/Navbar'
 import { SelectedPage } from '../types/types'
 import HeroContent from '../components/Header/HeroContent'
 import AboutUs from './AboutUs'
-import HeroBg from '../assets/images/sections/hero.png'
 
 
 const Main = () => {
@@ -30,13 +29,14 @@ const Main = () => {
   return (
     <>
       <div
-        className='w-full h-full bg-cover bg-center bg-no-repeat '
-        // style={{
-        //   background: 'linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url("../assets/images/sections/hero.png")',
-        // }}
-        style={{
-          backgroundImage: `url(${HeroBg})`,
-        }}
+        // className='w-full h-full bg-cover bg-center bg-no-repeat bg-hero'
+        className='heroSection'
+      // style={{
+      //   background: 'linear-gradient(to right, rgba(2, 15, 8, 0.50), transparent)',
+      // }}
+      // style={{
+      //   background: `url('../../src/assets/images/contactUs.jpg')`,
+      // }}
 
       >
         <Navbar
