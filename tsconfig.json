@@ -6,8 +6,8 @@
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
-    "module": "ESNext",
     "esModuleInterop": true,
+    "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -19,16 +19,15 @@
       }
     ],
     "paths": {
-      "@/*": ["./src*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
+    "svgr.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    "**/*.css",
-    "types/*.d.ts"
+    ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }

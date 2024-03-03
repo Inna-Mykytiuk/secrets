@@ -17,8 +17,17 @@ module.exports = {
       //     "url('http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back05.jpg')",
       // },
       backgroundImage: () => ({
-        hero: `url('../assets/images/sections/hero.png')`,
+        hero: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/hero.png')`,
       }),
+      backgroundColor: {
+        white: "#fff",
+        black: "rgba(0,0,0,0.9)",
+        overlay: "rgba(1, 10, 5, 0.92)",
+        unActiveImage: "rgba(9, 20, 16, 0.25)",
+        light1: "rgba(255, 255, 255, 0.1)",
+        light2: "rgba(255, 255, 255, 0.2)",
+        input: "rgba(255, 255, 255, 0.05)",
+      },
 
       fontFamily: {
         inter: ["Inter", "sans-serif"],

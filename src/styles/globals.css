@@ -129,14 +129,29 @@ img {
   }
 }
 
-@layer utilities {
-  /* .max-container {
-    @apply mx-auto my-0 max-w-[1440px] w-full;
-  }
+.footer-link {
+  position: relative;
+}
 
-  .padding-container {
-    @apply px-6 lg:px-10;
-  } */
+.footer-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+@layer utilities {
+  .navLink {
+    @apply text-white text-lg sm:text-sm font-normal transition duration-300 ease-in-out;
+  }
 
   .section {
     @apply flex min-h-screen flex-col items-center;

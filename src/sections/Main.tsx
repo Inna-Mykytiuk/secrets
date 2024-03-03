@@ -27,8 +27,10 @@ const Main = () => {
 
   return (
     <div
-      // className='w-full h-full bg-[url("../assets/images/sections/hero.png")] bg-cover bg-center bg-no-repeat'
       className='w-full h-full bg-cover bg-center bg-no-repeat bg-hero'
+    // style={{
+    //   background: 'linear-gradient(to right, rgba(2, 15, 8, 0.50), transparent)',
+    // }}
 
     >
       <Navbar

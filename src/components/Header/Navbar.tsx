@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
-  const flexBetween = "flex items-center justify-between";
+
   const isAboveMediumScreens = useMediaQuery("(min-width: 768px)");
   const { isOpen, toggle, close } = useToggle(false);
 
@@ -20,14 +20,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
     <nav className='w-full pt-[36px] pb-[36px] sm:pt-[25px] sm:pb-[66px] lg:pt-[24px] lg:pb-[50px] '>
 
       <div className='container'>
-        <div className={`${flexBetween} w-full gap-16`}>
+        <div className='flexBetween w-full gap-16'>
           {/* LEFT SIDE */}
           <Logo />
 
           {/* RIGHT SIDE */}
           {isAboveMediumScreens ? (
-            <div className={`${flexBetween}`}>
-              <div className={`${flexBetween} flexCenter gap-[24px] md:gap-[56px] text-white textNormal tracking-normal`}>
+            <div className='flexBetween'>
+              <div className='flexCenter gap-[24px] md:gap-[56px] text-white textNormal tracking-normal'>
                 <Link
                   page="About"
                   selectedPage={selectedPage}
