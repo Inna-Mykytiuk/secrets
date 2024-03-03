@@ -180,4 +180,16 @@ img {
   .textNormal {
     @apply font-normal text-sm;
   }
+
+  .title {
+    @apply text-[40px] sm:text-[67px] lg:text-[98px] font-thin text-mainWhite tracking-[-1.6px] sm:tracking-[-2.68px] lg:tracking-[-3.92px] uppercase;
+  }
+
+  .titleBold {
+    @apply text-[40px] sm:text-[67px] lg:text-[98px] font-medium;
+  }
+
+  .text {
+    @apply text-mainWhite text-sm sm:text-base lg:text-lg font-extralight leading-5 lg:leading-6;
+  }
 }

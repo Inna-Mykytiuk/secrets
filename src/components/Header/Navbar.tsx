@@ -17,7 +17,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const { isOpen, toggle, close } = useToggle(false);
 
   return (
-    <nav className='w-full pt-[36px] pb-[36px] sm:pt-[25px] sm:pb-[66px] lg:pt-[24px] lg:pb-[50px] '>
+    <nav className='w-full pt-[36px] pb-[36px] sm:pt-[25px] sm:pb-[66px] lg:pt-[24px] lg:pb-[50px] absolute '>
 
       <div className='container'>
         <div className='flexBetween w-full gap-16'>
