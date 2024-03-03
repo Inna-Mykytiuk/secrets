@@ -25,6 +25,7 @@ module.exports = {
         chooseUs: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/chooseUs.png')`,
         contactUs: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/contactUs.png')`,
         ourGallery: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/ourGallery.png')`,
+        image: "url(/contactUs.jpg)",
       }),
       backgroundColor: {
         white: "#fff",

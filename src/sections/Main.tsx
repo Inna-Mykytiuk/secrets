@@ -9,6 +9,7 @@ import bg from '../assets/images/contactUs.jpg'
 
 
 
+
 const Main = () => {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.About
@@ -32,7 +33,8 @@ const Main = () => {
     <>
       <div
         // className='w-full h-full bg-cover bg-center bg-no-repeat bg-hero'
-        className='heroSection'
+        className='w-full h-full bg-cover bg-center bg-no-repeat bg-image '
+      // className='heroSection'
       // style={{
       //   background: 'linear-gradient(to right, rgba(2, 15, 8, 0.50), transparent)',
       // }}
