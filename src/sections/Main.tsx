@@ -32,18 +32,18 @@ const Main = () => {
     <>
       <div
         // className='w-full h-full bg-cover bg-center bg-no-repeat bg-hero'
-        // className='heroSection'
-        // style={{
-        //   background: 'linear-gradient(to right, rgba(2, 15, 8, 0.50), transparent)',
-        // }}
-        // style={{
-        //   background: `url('../../src/assets/images/contactUs.jpg')`,
-        // }}
-        style={{
-          backgroundImage: `url(${bg.src})`,
-          width: '100%',
-          height: '100%',
-        }}
+        className='heroSection'
+      // style={{
+      //   background: 'linear-gradient(to right, rgba(2, 15, 8, 0.50), transparent)',
+      // }}
+      // style={{
+      //   background: `url('../../src/assets/images/contactUs.jpg')`,
+      // }}
+      // style={{
+      //   backgroundImage: `url(../assets/images/sections/hero.png)`,
+      //   width: '100%',
+      //   height: '100%',
+      // }}
 
       >
         <Navbar
