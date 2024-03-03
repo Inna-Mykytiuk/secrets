@@ -18,6 +18,10 @@ module.exports = {
       // },
       backgroundImage: () => ({
         hero: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/hero.png')`,
+        about: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/weAre.png')`,
+        chooseUs: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/chooseUs.png')`,
+        contactUs: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/contactUs.png')`,
+        ourGallery: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/ourGallery.png')`,
       }),
       backgroundColor: {
         white: "#fff",
