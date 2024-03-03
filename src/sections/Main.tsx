@@ -30,7 +30,7 @@ const Main = () => {
     <>
       <div
         // className='w-full h-full bg-cover bg-center bg-no-repeat bg-hero'
-        className='w-full h-full bg-cover bg-center bg-no-repeat bg-herobg'
+        className='w-full h-full bg-cover bg-center bg-no-repeat bg-picture'
       // className='heroSection'
       // style={{
       //   background: 'linear-gradient(to right, rgba(2, 15, 8, 0.50), transparent)',

@@ -25,8 +25,11 @@ module.exports = {
         contactUs: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/contactUs.png')`,
         ourGallery: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url('../assets/images/sections/ourGallery.png')`,
         image: "url(/contactUs.jpg)",
-        images: "url(/images/contactUs.jpg)",
-        cont: "url(/chooseUs.jpg)",
+        images: "url(/images/chooseUs.png)",
+
+        picture: "url(/images/sections/chooseUs.png)",
+
+        cont: "url(/chooseUs.png)",
         // herobg: "url(/sections/hero.jpg)",
         // herobg: "url(/hero.jpg)",
         herobg: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/hero.jpg)`,
