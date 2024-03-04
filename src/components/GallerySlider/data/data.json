@@ -1,0 +1,28 @@
+{
+  "slides": [
+    {
+      "img": "/images/miniSlider/forest.png",
+      "alt": "carpathian forest"
+    },
+    {
+      "img": "/images/miniSlider/lake.png",
+      "alt": "lake in high carpathian mountains"
+    },
+    {
+      "img": "/images/miniSlider/mountain.png",
+      "alt": "mountainous landscape"
+    },
+    {
+      "img": "/images/miniSlider/forest1.png",
+      "alt": "carpathian forest1"
+    },
+    {
+      "img": "/images/miniSlider/lake1.png",
+      "alt": "lake in high carpathian mountains1"
+    },
+    {
+      "img": "/images/miniSlider/mountain1.png",
+      "alt": "mountainous landscape1"
+    }
+  ]
+}

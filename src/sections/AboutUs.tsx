@@ -9,7 +9,9 @@ type Props = {
 
 const AboutUs = ({ setSelectedPage }: Props) => {
   return (
-    <section className='w-full h-full bg-cover bg-left bg-no-repeat bg-aboutMob x:bg-aboutMob1 sm:bg-about py-[55px] sm:py-[64px] lg:py-[104px]'
+    <section
+      // className='w-full h-full bg-cover bg-left bg-no-repeat bg-aboutMob x:bg-aboutMob1 sm:bg-about py-[55px] sm:py-[64px] lg:py-[104px]  lg:bg-about'
+      className='w-full h-full bg-cover bg-left bg-no-repeat bg-aboutMob sm:bg-about py-[55px] sm:py-[64px] lg:py-[104px]  lg:bg-about'
       id="about"
     >
       <div className='container'>

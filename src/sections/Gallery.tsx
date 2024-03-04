@@ -1,0 +1,30 @@
+'use client'
+import React from 'react'
+import { SelectedPage } from '@/types/types'
+import GallerySlider from '@/components/GallerySlider/Slider';
+
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/navigation';
+
+
+type Props = {
+  setSelectedPage: (value: SelectedPage) => void;
+}
+
+const Gallery: React.FC<Props> = ({ setSelectedPage }) => {
+
+  return (
+
+    <section id="gallery"
+      className='gallery-main relative z-10 w-full h-full bg-cover bg-left bg-no-repeat bg-ourGallery py-[55px] sm:py-[64px] lg:py-[104px]'>
+      <div className="container">
+        <h2 className='title relative sm:leading-none leading-[56px] mb-[15px]'>Our <span className='leading-none titleBold'>Gallery</span></h2>
+      </div>
+      <GallerySlider />
+    </section>
+
+  )
+}
+
+export default Gallery;

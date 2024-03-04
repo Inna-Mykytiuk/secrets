@@ -5,6 +5,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
+
+  --overlay-50: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
+  --overlay-75: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75));
+  --overlay-85: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.85));
+
+  --section-top-gradient: linear-gradient(
+    180deg,
+    #002426 0%,
+    rgba(0, 37, 49, 0) 100%
+  );
+  --section-bottom-gradient: linear-gradient(
+    0deg,
+    #002426 0%,
+    rgba(0, 37, 49, 0) 100%
+  );
+}
+
 *,
 *::before,
 *::after {
@@ -84,17 +104,45 @@ img {
   margin: 0 auto;
 }
 
-.heroSection {
+/* .heroSection {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
     url(../assets/images/sections/hero.png);
-  /* background: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
-  url("../assets/images/sections/hero.png"); */
+  background: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+  url("../assets/images/sections/hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* min-height: 100vh; */
+} */
+
+/*Slider*/
+
+.gallery-main {
+  width: 100%;
+}
+
+.gallery-main::before,
+.gallery-main::after {
+  content: "";
+  width: 100%;
+  height: 247px;
+  position: absolute;
+  opacity: 0.75;
+}
+
+.gallery-main::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--section-top-gradient);
+}
+
+.gallery-main::after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--section-bottom-gradient);
 }
 
 @media screen and (min-width: 480px) {
@@ -194,4 +242,66 @@ img {
   .text {
     @apply text-mainWhite text-sm sm:text-base lg:text-lg font-extralight leading-5 lg:leading-6;
   }
+
+  .btn-anim {
+    @apply transition-colors hover:text-white/60 focus:text-white/60;
+  }
+}
+
+.gallery .swiper-wrapper {
+  width: 100%;
+  align-items: center;
+}
+
+.gallery-slider.swiper-slide {
+  @apply md:opacity-0;
+}
+
+.swiper.gallery .swiper-slide.gallery-slider.swiper-slide-next,
+.swiper.gallery .swiper-slide.gallery-slider.swiper-slide-prev {
+  height: 187px !important;
+  opacity: 1;
+}
+
+.swiper.gallery .swiper-slide.gallery-slider.swiper-slide-active {
+  height: 187px !important;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper.gallery .swiper-slide.gallery-slider.swiper-slide-next,
+  .swiper.gallery .swiper-slide.gallery-slider.swiper-slide-prev {
+    width: 121px !important;
+    height: 87px !important;
+  }
+
+  .swiper.gallery .swiper-slide.gallery-slider.swiper-slide-active {
+    width: 415px !important;
+    height: 294px !important;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper.gallery .swiper-slide.gallery-slider.swiper-slide-next,
+  .swiper.gallery .swiper-slide.gallery-slider.swiper-slide-prev {
+    width: 313px !important;
+    height: 225px !important;
+  }
+
+  .swiper.gallery .swiper-slide.gallery-slider.swiper-slide-active {
+    width: 606px !important;
+    height: 429px !important;
+  }
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 15, 8, 0.75);
+  z-index: 1;
 }

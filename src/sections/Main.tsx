@@ -5,6 +5,7 @@ import Navbar from '../components/Header/Navbar'
 import { SelectedPage } from '../types/types'
 import HeroContent from '../components/Header/HeroContent'
 import AboutUs from './AboutUs'
+import Gallery from './Gallery'
 
 
 const Main = () => {
@@ -28,17 +29,15 @@ const Main = () => {
 
   return (
     <>
-      <div
-        className='w-full h-full bg-cover bg-center bg-no-repeat bg-hero'
-      >
+      <div className='w-full h-full bg-cover bg-center bg-no-repeat bg-hero'>
         <Navbar
           isTopOfPage={isTopOfPage}
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage} />
         <HeroContent />
-
       </div >
       <AboutUs setSelectedPage={setSelectedPage} />
+      <Gallery setSelectedPage={setSelectedPage} />
     </>
   )
 }

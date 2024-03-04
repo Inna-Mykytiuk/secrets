@@ -23,7 +23,7 @@ module.exports = {
         aboutMob1: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/weAreMob.png)`,
         chooseUs: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/chooseUs.png)`,
         contactUs: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/contactUs.png)`,
-        ourGallery: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/ourGallery.png)`,
+        ourGallery: `linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)),url(/images/sections/ourGallery.png)`,
 
         // image: "url(/contactUs.jpg)",
         // images: "url(/images/chooseUs.png)",
@@ -70,6 +70,9 @@ module.exports = {
         md: "1024px",
         lg: "1280px",
         xl: "1440px",
+
+        smOnly: { max: "767.98px" },
+        mdOnly: { min: "768px", max: "1279.98px" },
       },
       colors: {
         mainGray: "#181716",
