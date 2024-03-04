@@ -6,7 +6,7 @@ import ButtonJoin from '@//ui/ButtonJoin'
 const HeroContent = () => {
   return (
     <div className='container'>
-      <div className=' sm:flex-row flex flex-col justify-between py-[55px] sm:py-[64px] lg:py-[104px]'>
+      <div className=' sm:flex-row flex flex-col justify-between pb-[55px] pt-[104px] sm:pb-[64px] sm:pt-[122px] lg:pb-[104px] lg:pt-[130px]'>
         <div className='sm:hidden flex flex-col text-end pb-6'>
           <p className='text-[37px] font-thin text-mainWhite uppercase tracking-[1.665px] '><span className='text-[37px] font-medium'>7</span>DAYS</p>
           <p className='text-xs font-light text-mainWhite tracking-[9px] mt-[-15px] uppercase'>JOURNEY</p>
