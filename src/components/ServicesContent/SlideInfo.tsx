@@ -47,7 +47,7 @@ const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, han
           <span className="opacity-20">/05</span>
         </p>
       </div>
-      <div className='flex'>
+      <div className='flex flex-col sm:flex-row'>
         <Image
           alt={title}
           src={img}
@@ -69,7 +69,7 @@ const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, han
             >
               <p>{promo}</p>
             </div>
-            <p className="text-white row-start-6 font-extralight text-sm sm:text-[13px] lg:text-lg sm:text-justify mt-auto sm:row-start-4 sm:col-start-2 sm:self-end lg:row-start-3 lg:col-start-3 leading-5 lg:leading-6">
+            <p className="text-white row-start-6 font-extralight text-sm sm:text-[13px] lg:text-lg sm:text-justify mt-auto sm:self-end leading-5 lg:leading-6 w-full sm:w-[221px] lg:w-[293px] ">
               {description}
             </p>
           </div>
