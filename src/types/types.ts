@@ -20,3 +20,16 @@ export type GalleryNavProps = {
   prevBtnRef: React.RefObject<HTMLButtonElement>;
   nextBtnRef: React.RefObject<HTMLButtonElement>;
 };
+
+export interface ServicesSlideInfoProps {
+  item: {
+    id: string;
+    img: string;
+    promo: string;
+    title: string;
+    description: string;
+  };
+  idx?: number;
+  activeSlide?: number;
+  handleMenuButtonClick?: (slideIndex: number) => void;
+}

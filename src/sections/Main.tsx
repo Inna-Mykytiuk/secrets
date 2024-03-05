@@ -6,6 +6,7 @@ import { SelectedPage } from '../types/types'
 import HeroContent from '../components/Header/HeroContent'
 import AboutUs from './AboutUs'
 import Gallery from './Gallery'
+import Services from './Services'
 
 
 const Main = () => {
@@ -38,6 +39,7 @@ const Main = () => {
       </div >
       <AboutUs setSelectedPage={setSelectedPage} />
       <Gallery setSelectedPage={setSelectedPage} />
+      <Services setSelectedPage={setSelectedPage} />
     </>
   )
 }

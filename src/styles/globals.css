@@ -293,6 +293,10 @@ img {
     width: 606px !important;
     height: 429px !important;
   }
+
+  .promo {
+    padding-top: 0px;
+  }
 }
 
 .image-wrapper::before {

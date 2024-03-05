@@ -9,7 +9,7 @@ import Button from './Button';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/keyboard';
-import data from './data/data.json'
+import data from '../../data/gallery.json'
 
 const GallerySlider = () => {
   return (
