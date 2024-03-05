@@ -39,10 +39,10 @@ const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, han
 
   return (
     <div className='container'>
-      <div className='w-full flex flex-col sm:flex-row'>
-        <h2 className='title sm:leading-none lg:leading-none leading-[56px] self-center w-full sm:w-[543px] lg:w-[627px] '>We <span className='leading-none titleBold'>Offer</span>
+      <div className='w-full flex flex-col sm:flex-row mb-4 sm:mb-10 lg:mb-5'>
+        <h2 className='title sm:leading-none lg:leading-none leading-[56px] self-center w-full sm:w-[483px] lg:w-[627px] '>We <span className='leading-none titleBold'>Offer</span>
         </h2>
-        <p className="my-0 h-full title">
+        <p className="my-0 h-full title text-end sm:text-start leading-none ">
           {id}
           <span className="opacity-20">/05</span>
         </p>
@@ -53,8 +53,16 @@ const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, han
           src={img}
           width={280}
           height={213}
-          className="mb-3 row-start-3 w-full sm:mb-0 sm:h-[370px]  lg:h-[429px]"
+          className="mb-3 row-start-3 w-full sm:w-[463px] sm:mb-0 sm:h-[370px] lg:w-[607px] lg:h-[429px]"
         />
+        <div
+          className={`flex sm:hidden promo text-mainWhite text-xs font-extralight leading-6 mb-6 text-end`}
+          style={{
+            paddingTop: calculatePaddingTop(idx),
+          }}
+        >
+          <p className='text-end'>{promo}</p>
+        </div>
         <div className='w-full flex flex-col lg:flex-row sm:ml-5'>
           <SlideList
             activeSlide={activeSlide}
@@ -62,13 +70,14 @@ const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, han
           />
           <div className='flex flex-col w-full sm:w-[221px] lg:w-[293px] h-full justify-between'>
             <div
-              className={`flex promo text-mainWhite text-xs font-extralight leading-6`}
+              className={`hidden sm:flex promo text-mainWhite text-xs font-extralight leading-6`}
               style={{
                 paddingTop: calculatePaddingTop(idx),
               }}
             >
               <p>{promo}</p>
             </div>
+
             <p className="text-white row-start-6 font-extralight text-sm sm:text-[13px] lg:text-lg sm:text-justify mt-auto sm:self-end leading-5 lg:leading-6 w-full sm:w-[221px] lg:w-[293px] ">
               {description}
             </p>
