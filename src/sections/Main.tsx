@@ -7,6 +7,7 @@ import HeroContent from '../components/Header/HeroContent'
 import AboutUs from './AboutUs'
 import Gallery from './Gallery'
 import Services from './Services'
+import ChooseUs from './ChooseUs'
 
 
 const Main = () => {
@@ -38,8 +39,9 @@ const Main = () => {
         <HeroContent />
       </div >
       <AboutUs setSelectedPage={setSelectedPage} />
-      <Gallery setSelectedPage={setSelectedPage} />
       <Services setSelectedPage={setSelectedPage} />
+      <Gallery setSelectedPage={setSelectedPage} />
+      <ChooseUs setSelectedPage={setSelectedPage} />
     </>
   )
 }

@@ -11,23 +11,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // backgroundImage: {
-      //   hero: 'url("./src/assets/images/sections/hero.png")',
-      //   galaxy:
-      //     "url('http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back05.jpg')",
-      // },
       backgroundImage: () => ({
         hero: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/hero.png)`,
         about: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/weAre.png)`,
         aboutMob: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/weAreMob1.png)`,
         aboutMob1: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/weAreMob.png)`,
-        chooseUs: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/chooseUs.png)`,
+        chooseUs: `linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),url(/images/sections/chooseUs.png)`,
         contactUs: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/contactUs.png)`,
         ourGallery: `linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)),url(/images/sections/ourGallery.png)`,
-
-        // image: "url(/contactUs.jpg)",
-        // images: "url(/images/chooseUs.png)",
-        // picture: "url(/images/sections/chooseUs.png)",
       }),
       backgroundColor: {
         white: "#fff",
@@ -93,7 +84,6 @@ module.exports = {
         primary500: "#FF6B66",
         secondary400: "#FFCD5B",
         secondary500: "#FFC132",
-        rose800: "5c0003",
 
         backdrop: "rgba(1, 10, 5, 0.75)",
       },
