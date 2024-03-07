@@ -10,7 +10,7 @@ import { CareerFormInfo } from "../../data/career";
 import FormInput from "../Form/FormInput";
 import FormTextArea from "../Form/FormTextArea";
 import FormPolicy from "../Form/FormPolicy";
-import FormButton from "../Form/FormBurron";
+import FormButton from "../Form/FormButton";
 
 export const ChooseUsForm: React.FC = () => {
   const { register, handleSubmit, reset, watch, setValue, formState: { errors } } = useForm<FormData>();
@@ -30,15 +30,13 @@ export const ChooseUsForm: React.FC = () => {
   return (
     <>
       <p
-        className="ml-auto mb-9 w-[179px] text-sm font-extralight leading-5
-                    sm:ml-0 sm:mb-[28px] sm:w-[221px] sm:text-[13px] sm:leading-[20px]
-                    lg:mb-[14px] lg:w-[234px] lg:text-lg lg:leading-6"
+        className="ml-auto text-white mb-9 w-[179px] text-sm font-extralight leading-5 sm:ml-0 sm:mb-[28px] sm:w-[221px] sm:text-[13px] sm:leading-[20px] lg:mb-[14px] lg:w-[234px] lg:text-lg lg:leading-6"
       >
         {description}
       </p>
 
       <form
-        className="flex flex-col sm:w-[464px] sm:grid sm:grid-cols-2 sm:gap-x-5 lg:w-[606px]"
+        className="flex flex-col sm:w-[464px] sm:grid sm:grid-cols-2 sm:gap-x-7 lg:w-[606px]"
         onSubmit={handleSubmit(onSubmit)}
         aria-label="Career"
         noValidate
@@ -46,7 +44,7 @@ export const ChooseUsForm: React.FC = () => {
         <div className="flex flex-col">
 
           {inputs.map(inputInfo =>
-            <div className="mb-4 flex flex-col relative lg:mb-[26px]" key={inputInfo.id}>
+            <div className="mb-4 flex flex-col relative sm:mb-[16px] lg:mb-[26px]" key={inputInfo.id}>
               <FormInput
                 inputInfo={inputInfo}
                 register={register}
@@ -68,7 +66,7 @@ export const ChooseUsForm: React.FC = () => {
           <FormPolicy
             policy={policy}
             register={register}
-            errors={errors}
+
           />
         }
 

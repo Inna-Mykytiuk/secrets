@@ -16,9 +16,7 @@ const FormInput: React.FC<FormInputProps> = ({
     <>
       <label
         htmlFor={inputInfo.id}
-        className={`label ${inputStyles}
-                    ${inputInfo.id === 'career-phone' ? 'phone-label' : ''}
-                `}
+        className={`label ${inputStyles} ${inputInfo.id === 'career-phone' ? 'phone-label' : ''}`}
       >
         {inputInfo.label}
       </label>
@@ -29,11 +27,7 @@ const FormInput: React.FC<FormInputProps> = ({
         autoComplete={inputInfo.autoComplete}
         placeholder={inputInfo.placeholder}
         aria-label={inputInfo.aria}
-        className={`
-                    input ${inputStyles}
-                    ${errors[inputInfo.formData] ? 'invalid-input' : ''}
-                    ${inputInfo.id === 'career-phone' ? 'phone' : ''}
-                `}
+        className={`input ${inputStyles} ${errors[inputInfo.formData] ? 'invalid-input' : ''} ${inputInfo.id === 'career-phone' ? 'phone' : ''}`}
         {...register(inputInfo.formData, options)}
       />
 

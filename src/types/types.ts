@@ -131,5 +131,4 @@ export type FormTextAreaProps = {
 export type FormPolicyProps = {
   policy: CareerPolicy;
   register: UseFormRegister<FormData>;
-  errors: FieldErrors<FormData>;
 };

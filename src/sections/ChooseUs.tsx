@@ -1,13 +1,16 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { SelectedPage } from '@/types/types'
 
 import ChooseUsContent from '@/components/ChooseUsContent/ChooseUsContent';
 import ChooseUsForm from '@/components/ChooseUsContent/ChooseUsForm';
 
+type Props = {
+  setSelectedPage: (value: SelectedPage) => void;
+}
 
-
-const Career: React.FC = () => {
+const Career: React.FC<Props> = ({ setSelectedPage }) => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
 
@@ -42,13 +45,10 @@ const Career: React.FC = () => {
     <>
       <section
         id="career"
-        className="w-full bg-cover bg-top bg-repeat sm:bg-no-repeat bg-chooseUs sm:py-[64px] lg:py-[104px]"
+        className="w-full bg-cover bg-top bg-repeat sm:bg-no-repeat bg-chooseUs sm:py-[64px] lg:py-[104px] py-[55px] "
       >
-        {/* content */}
         <div
-          className="container px-5 py-[56px] relative z-10
-            sm:px-8 sm:py-16 
-            lg:px-6 lg:h-[818px]"
+          className="container"
         >
           <div className='flex flex-col '>
             <div className='flex flex-col items-end sm:flex-row sm:justify-between mb-8 sm:mb-3 lg:mb-6'>
@@ -73,11 +73,10 @@ const Career: React.FC = () => {
           </div>
         </div>
       </section>
-
       {isMobile && (
         <section
           id="career"
-          className="career career-mob relative bg-cover bg-no-repeat bg-top bg-chooseUs"
+          className="career career-mob relative bg-cover bg-no-repeat bg-top bg-chooseUs py-[55px] "
         >
           <div className="container">
             <ChooseUsForm />

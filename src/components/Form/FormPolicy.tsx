@@ -4,8 +4,7 @@ import { FormPolicyProps } from '../../types/types'
 
 const FormPolicy: React.FC<FormPolicyProps> = ({
   policy,
-  register,
-  errors
+  register
 }) => {
   return (
     <div className="lg:pt-[10px] relative">
@@ -20,7 +19,7 @@ const FormPolicy: React.FC<FormPolicyProps> = ({
       />
       <label
         htmlFor="career-policy"
-        className="policy-agreement pl-8 relative flex 
+        className="policy-agreement text-white pl-8 relative flex 
             text-xs font-extralight leading-[22px] lg:leading-6"
       >
         <Image
@@ -39,11 +38,6 @@ const FormPolicy: React.FC<FormPolicyProps> = ({
         />
         {policy.text}
       </label>
-      {errors.consent && (
-        <div className="validation-error left-5 right-auto">
-          {policy.error}
-        </div>
-      )}
     </div>
   );
 };

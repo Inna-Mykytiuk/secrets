@@ -1,37 +1,5 @@
 import { CareerForm } from "../types/types";
 
-// export const CareerInfo: CareerData = {
-//   sectionTitle: {
-//     main: "Choose ",
-//     accent: "us",
-//   },
-//   description:
-//     "Your chance to join our passionate team in Carpathian tourism. Seeking talented professionals to share our common mission.",
-//   subtitle: "Why us ?",
-//   benefits: [
-//     {
-//       name: "Professional development",
-//       description:
-//         "We offer growth opportunities and a creative environment to nurture your talents.",
-//     },
-//     {
-//       name: "Teamwork",
-//       description:
-//         "Join our close-knit family, where support and inspiration abound.",
-//     },
-//     {
-//       name: "Stimulating work environment",
-//       description:
-//         "Flexibility and remote options for a comfortable experience.",
-//     },
-//     {
-//       name: "Exciting challenges",
-//       description:
-//         "Unleash your potential through unforgettable projects showcasing Carpathian beauty.",
-//     },
-//   ],
-// };
-
 export const CareerFormInfo: CareerForm = {
   description:
     "Don't miss your opportunity! Fill out the form right now and join our team!",

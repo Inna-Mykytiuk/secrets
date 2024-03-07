@@ -40,8 +40,8 @@ const Main = () => {
       </div >
       <AboutUs setSelectedPage={setSelectedPage} />
       <Services setSelectedPage={setSelectedPage} />
-      <Gallery setSelectedPage={setSelectedPage} />
       <ChooseUs setSelectedPage={setSelectedPage} />
+      <Gallery setSelectedPage={setSelectedPage} />
     </>
   )
 }
