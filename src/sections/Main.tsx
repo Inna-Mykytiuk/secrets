@@ -1,8 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Navbar from '../components/Header/Navbar'
 import { SelectedPage } from '../types/types'
+import Navbar from '../components/Header/Navbar'
 import HeroContent from '../components/Header/HeroContent'
 import AboutUs from './AboutUs'
 import Gallery from './Gallery'

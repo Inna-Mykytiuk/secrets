@@ -3,6 +3,8 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+
+import { animateScroll } from "react-scroll"
 import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState } from 'react';
 import desktopLeft from '../assets/icons/desktop-left.svg?url';
@@ -39,11 +41,28 @@ const ButtonJoin = () => {
     }
   }, [isMobile, isTablet]);
 
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId) as HTMLDivElement;
+
+    if (section) {
+      const sectionTop = section.offsetTop;
+      animateScroll.scrollTo(sectionTop, {
+        duration: 1500,
+        smooth: "easeOutCubic",
+      })
+    }
+  }
+
+  const handleButtonClick = () => {
+    scrollToSection('contacts');
+  };
+
   return (
-    <Link
-      id="buttonJoinUs"
-      href="/"
-      className={`uppercase text-white text-lg lg:text-[32px] font-bold h-[53px] lg:h-[71px] leading-[48px] sm:leading-none lg:leading-none px-[64px] flexCenter bg-light1 relative hover:bg-light2 py-[18px] sm:py-[14px] lg:py-[16px] transition duration-300 ease-in-out`}
+    <button
+      type="button"
+      onClick={handleButtonClick}
+      className={`w-full uppercase text-white text-lg lg:text-[32px] font-bold h-[53px] lg:h-[71px] leading-[48px] sm:leading-none lg:leading-none px-[64px] flexCenter bg-light1 relative hover:bg-light2 focus:bg-light2 py-[18px] sm:py-[14px] lg:py-[16px] transition duration-300 ease-in-out outline-none focus:outline-none`}
     >
       <Image
         src={(typeof leftImage === 'object' && (leftImage as { default: string; url: string }).url) || (leftImage as string)}
@@ -60,7 +79,7 @@ const ButtonJoin = () => {
         height={100}
         className="absolute top-0 right-0 h-[53px] sm:w-[35px] lg:w-[44px] w-[42px] sm:h-[50px] lg:h-[71px]"
       />
-    </Link>
+    </button>
   );
 };
 

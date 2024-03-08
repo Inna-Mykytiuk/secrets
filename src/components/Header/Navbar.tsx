@@ -1,8 +1,10 @@
-import { SelectedPage } from "@//types/types";
-import Link from "./Links";
+'use client'
 
+import { useEffect, useState } from "react";
+import { SelectedPage } from "../../types/types";
 import useMediaQuery from "../../hooks/useMediaQuery";
-import { useToggle } from "@//hooks/useToggle";
+import { useToggle } from "../../hooks/useToggle";
+import Link from "./Links";
 import Logo from "./Logo";
 
 type Props = {
@@ -15,6 +17,31 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
   const isAboveMediumScreens = useMediaQuery("(min-width: 768px)");
   const { isOpen, toggle, close } = useToggle(false);
+  const handleKeyPress = (event: KeyboardEvent) => {
+    if (event.key === "Escape" && isOpen) {
+      close();
+      event.preventDefault();
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyPress);
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
 
   return (
     <nav className='w-full pt-[36px] pb-[36px] sm:pt-[25px] sm:pb-[66px] lg:pt-[24px] lg:pb-[50px] absolute '>

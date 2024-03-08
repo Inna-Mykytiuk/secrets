@@ -26,7 +26,7 @@ const SlideList: FC<SlideListProps> = ({ activeSlide, onMenuButtonClick }) => {
           className={`flex text-mainWhite items-center uppercase text-xl sm:text-[22px] lg:text-2xl font-extralight cursor-pointer leading-[17px] sm:leading-[18px] lg:leading-6
           ${idx === activeSlide
               ? 'opacity-100 font-medium'
-              : 'opacity-50 hover:pl-1 hover:opacity-100 transition-all duration-500 easy-in-out'
+              : 'opacity-50 hover:pl-1 hover:opacity-100 focus:pl-1 focus:opacity-100 transition-all duration-500 easy-in-out outline-none focus:outline-none '
             }`}
         >
           <button

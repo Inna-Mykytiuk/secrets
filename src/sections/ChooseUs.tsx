@@ -1,10 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { SelectedPage } from '@/types/types'
-
-import ChooseUsContent from '@/components/ChooseUsContent/ChooseUsContent';
-import ChooseUsForm from '@/components/ChooseUsContent/ChooseUsForm';
+import { SelectedPage } from '../types/types'
+import ChooseUsContent from '../components/ChooseUsContent/ChooseUsContent';
+import ChooseUsForm from '../components/ChooseUsContent/ChooseUsForm';
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;

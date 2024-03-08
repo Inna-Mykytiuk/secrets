@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { SelectedPage } from '@/types/types'
+import { SelectedPage } from '../types/types'
 
 type Props = {
   children?: React.ReactNode;

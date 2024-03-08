@@ -1,14 +1,14 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { SelectedPage } from '@/types/types';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
-import SlideInfo from '@/components/ServicesContent/SlideInfo';
+import { SelectedPage } from '../types/types';
+import SlideInfo from '../components/ServicesContent/SlideInfo';
 import services from '../data/services.json'
 
 

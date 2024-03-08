@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import ButtonJoin from '@//ui/ButtonJoin'
+import ButtonJoin from '../../ui/ButtonJoin'
 
 const HeroContent = () => {
   return (

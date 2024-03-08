@@ -1,12 +1,11 @@
 'use client'
 import React from 'react'
-import { SelectedPage } from '@/types/types'
-import GallerySlider from '@/components/GallerySlider/Slider';
-
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 
+import { SelectedPage } from '../types/types'
+import GallerySlider from '../components/GallerySlider/Slider';
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;

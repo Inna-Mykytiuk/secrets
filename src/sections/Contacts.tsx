@@ -1,7 +1,7 @@
 import React from 'react'
-import { SelectedPage } from '@/types/types'
-import ContactInfo from '@/components/Contacts/ContactInfo'
-import ContactForm from '@/components/Contacts/ContactsForm'
+import { SelectedPage } from '../types/types'
+import ContactInfo from '../components/Contacts/ContactInfo'
+import ContactForm from '../components/Contacts/ContactsForm'
 
 type Props = {
   children?: React.ReactNode;

@@ -3,13 +3,11 @@
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-
-import Button from './Button';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/keyboard';
 import data from '../../data/gallery.json'
+import Button from './Button';
 
 const GallerySlider = () => {
   return (

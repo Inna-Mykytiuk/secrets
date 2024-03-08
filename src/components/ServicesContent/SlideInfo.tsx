@@ -2,10 +2,8 @@
 
 import React, { FC, useState, useEffect } from 'react';
 import Image from 'next/image';
+import { ServicesSlideInfoProps } from '../../types/types';
 import SlideList from './SlideList';
-import { ServicesSlideInfoProps } from '@/types/types';
-
-
 
 const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, handleMenuButtonClick = () => { } }) => {
 
@@ -19,7 +17,6 @@ const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, han
     return '0px';
   };
 
-  // Update window width on resize
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(typeof window !== 'undefined' ? window.innerWidth : 0);

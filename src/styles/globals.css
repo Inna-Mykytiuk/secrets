@@ -6,9 +6,6 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-rgb: 0, 0, 0;
-
   --overlay-50: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
   --overlay-75: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75));
   --overlay-85: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.85));
@@ -44,9 +41,6 @@ body {
   width: 100%;
 }
 
-picture,
-video,
-canvas,
 svg {
   display: block;
   max-width: 100%;
@@ -103,18 +97,6 @@ img {
   padding: 0 20px;
   margin: 0 auto;
 }
-
-/* .heroSection {
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
-    url(../assets/images/sections/hero.png);
-  background: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
-  url("../assets/images/sections/hero.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 /*Slider*/
 
@@ -246,9 +228,11 @@ img {
   height: 1px;
   background-color: #fff;
   transition: width 0.3s ease-in-out;
+  outline: none;
 }
 
-.footer-link:hover::after {
+.footer-link:hover::after,
+.footer-link:focus::after {
   width: 100%;
 }
 
@@ -383,7 +367,7 @@ img {
 
   .input {
     @apply px-2 py-[2px] w-full block bg-white bg-opacity-5 text-white text-[13px] font-extralight leading-6 outline-none 
-  focus:outline-none focus:bg-opacity-10 hover:bg-opacity-10
+  focus:outline-none focus:bg-opacity-10 hover:bg-opacity-10 
   placeholder:text-white placeholder:opacity-[0.2]
   sm:w-[222px] lg:w-[290px] lg:text-[20px] lg:leading-6 transition-all ease-in duration-200;
   }
