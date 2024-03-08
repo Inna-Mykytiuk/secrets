@@ -62,6 +62,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             </div>
           ) : (
             <button
+              aria-label="toggle menu button open"
               className=" text-white textNormal cursor-pointer block uppercase"
               onClick={toggle}
             >
@@ -80,6 +81,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           {/* CLOSE ICON */}
           <div className="flex justify-end pt-[43px] pr-[20px]">
             <button
+              aria-label="toggle menu button close"
               className=" text-white textNormal cursor-pointer block uppercase"
               onClick={toggle}
             >

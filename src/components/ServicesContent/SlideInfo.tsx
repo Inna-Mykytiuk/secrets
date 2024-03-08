@@ -77,16 +77,12 @@ const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, han
             >
               <p>{promo}</p>
             </div>
-
             <p className="text-white row-start-6 font-extralight text-sm sm:text-[13px] lg:text-lg sm:text-justify mt-auto sm:self-end leading-5 lg:leading-6 w-full sm:w-[221px] lg:w-[293px] ">
               {description}
             </p>
           </div>
         </div>
-
-
       </div>
-
     </div>
   );
 };

@@ -30,6 +30,7 @@ const SlideList: FC<SlideListProps> = ({ activeSlide, onMenuButtonClick }) => {
             }`}
         >
           <button
+            aria-label="button toggle"
             type="button"
             className="flex items-center uppercase text-left"
             onClick={() => onMenuButtonClick(idx)}

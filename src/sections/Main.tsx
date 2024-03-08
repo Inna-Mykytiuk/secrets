@@ -8,6 +8,7 @@ import AboutUs from './AboutUs'
 import Gallery from './Gallery'
 import Services from './Services'
 import ChooseUs from './ChooseUs'
+import Contacts from './Contacts'
 
 
 const Main = () => {
@@ -42,6 +43,7 @@ const Main = () => {
       <Services setSelectedPage={setSelectedPage} />
       <ChooseUs setSelectedPage={setSelectedPage} />
       <Gallery setSelectedPage={setSelectedPage} />
+      <Contacts setSelectedPage={setSelectedPage} />
     </>
   )
 }

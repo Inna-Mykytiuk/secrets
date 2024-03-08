@@ -54,7 +54,7 @@ const Services = ({ setSelectedPage }: Props) => {
                 key={id}
                 className="bg-cover bg-center bg-opacity-75 py-[54px] sm:py-[64px] lg:py-[104px]"
                 style={{
-                  background: `linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0.25) 40%, rgba(10, 24, 19, 0.75) 75%, rgba(0, 37, 49, 0.75) 100%),url(${bg}) center / cover no-repeat
+                  background: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.75)),url(${bg}) center / cover no-repeat
                     `,
                 }}
               >

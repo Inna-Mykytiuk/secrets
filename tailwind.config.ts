@@ -18,7 +18,7 @@ module.exports = {
         aboutMob1: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/weAreMob.png)`,
         chooseUs: `linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),url(/images/sections/chooseUs.png)`,
         chooseUsMob: `linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),url(/images/sections/chooseUsMob.png)`,
-        contactUs: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/contactUs.png)`,
+        contactUs: `linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),url(/images/sections/contactUs.png)`,
         ourGallery: `linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.85)),url(/images/sections/ourGallery.png)`,
         invalid: "url(/icons/invalid.svg)",
       }),

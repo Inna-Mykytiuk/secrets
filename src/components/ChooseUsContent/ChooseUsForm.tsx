@@ -71,6 +71,7 @@ export const ChooseUsForm: React.FC = () => {
         }
 
         <FormButton
+          aria-label="Button send"
           btnStyles=" text-white mt-4 sm:m-0 lg:text-[32px] justify-self-end"
         />
 

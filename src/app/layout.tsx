@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
+import { Toaster } from 'react-hot-toast'
 
 
 export const metadata: Metadata = {
@@ -15,7 +16,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className='overflow-hidden flex flex-1 flex-col'>{children}</main>
+        <main className='overflow-hidden flex flex-1 flex-col'>
+          {children}
+          <Toaster
+            position="top-center"
+            reverseOrder={false}
+            toastOptions={{
+              style: {
+                borderRadius: '10px',
+                background: '#333',
+                color: '#fff'
+              },
+              duration: 2500,
+            }}
+          /></main>
       </body>
     </html>
   );

@@ -19,7 +19,7 @@ const Gallery: React.FC<Props> = ({ setSelectedPage }) => {
     <section id="gallery"
       className='gallery-main relative z-10 w-full h-full bg-cover bg-left bg-no-repeat bg-ourGallery py-[55px] sm:py-[64px] lg:py-[104px]'>
       <div className="container">
-        <h2 className='title relative sm:leading-none leading-[56px] mb-[15px]'>Our <span className='leading-none titleBold'>Gallery</span></h2>
+        <h2 className='title z-10 relative sm:leading-none leading-[56px] mb-[23px] lg:mb-[15px] sm:mb-[65px] text-start sm:text-center lg:text-start'>Our <span className='leading-none titleBold'>Gallery</span></h2>
       </div>
       <GallerySlider />
     </section>

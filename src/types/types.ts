@@ -132,3 +132,28 @@ export type FormPolicyProps = {
   policy: CareerPolicy;
   register: UseFormRegister<FormData>;
 };
+
+export type Contact = {
+  name: string;
+  contacts: string[];
+};
+
+export type Social = {
+  title: string;
+  link: string;
+};
+
+export type Socials = {
+  name: string;
+  contacts: Social[];
+};
+
+export type ContactData = {
+  phone: Contact;
+  email: Contact;
+  socials: Socials;
+};
+
+export type ContactForm = {
+  formContent: FormContent;
+};
