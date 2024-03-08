@@ -7,12 +7,12 @@ import Link from 'next/link';
 import { animateScroll } from "react-scroll"
 import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState } from 'react';
-import desktopLeft from '../assets/icons/desktop-left.svg?url';
-import desktopRight from '../assets/icons/desktop-right.svg?url';
-import tabletLeft from '../assets/icons/tablet-left.svg?url';
-import tabletRight from '../assets/icons/tablet-right.svg?url';
-import mobileLeft from '../assets/icons/mobile-left.svg?url';
-import mobileRight from '../assets/icons/mobile-right.svg?url';
+import desktopLeft from '../../public/icons/desktop-left.svg?url';
+import desktopRight from '../../public/icons/desktop-right.svg?url';
+import tabletLeft from '../../public/icons/tablet-left.svg?url';
+import tabletRight from '../../public/icons/tablet-right.svg?url';
+import mobileLeft from '../../public/icons/mobile-left.svg?url';
+import mobileRight from '../../public/icons/mobile-right.svg?url';
 
 type ImageType = string | { default: string; url: string };
 

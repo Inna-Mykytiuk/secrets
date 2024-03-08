@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../../assets/icons/logo.png'
+import logo from '../../../public/icons/logo.png'
 
 const Logo = () => {
   return (
