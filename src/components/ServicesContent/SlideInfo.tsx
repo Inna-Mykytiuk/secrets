@@ -4,6 +4,7 @@ import React, { FC, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { ServicesSlideInfoProps } from '../../types/types';
 import SlideList from './SlideList';
+import { motion } from "framer-motion";
 
 const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, handleMenuButtonClick = () => { } }) => {
 
@@ -37,8 +38,18 @@ const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, han
   return (
     <div className='container'>
       <div className='w-full flex flex-col sm:flex-row mb-4 sm:mb-10 lg:mb-5'>
-        <h2 className='title sm:leading-none lg:leading-none leading-[56px] self-center w-full sm:w-[483px] lg:w-[627px] '>We <span className='leading-none titleBold'>Offer</span>
-        </h2>
+        <motion.h2
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.3 }}
+          variants={{
+            hidden: { opacity: 0, x: -100 },
+            visible: { opacity: 1, x: 0 },
+          }}
+
+          className='title sm:leading-none lg:leading-none leading-[56px] self-center w-full sm:w-[483px] lg:w-[627px] '>We <span className='leading-none titleBold'>Offer</span>
+        </motion.h2>
         <p className="my-0 h-full title text-end sm:text-start leading-none ">
           {id}
           <span className="opacity-20">/05</span>
@@ -74,9 +85,18 @@ const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, han
             >
               <p>{promo}</p>
             </div>
-            <p className="text-white row-start-6 font-extralight text-sm sm:text-[13px] lg:text-lg sm:text-justify mt-auto sm:self-end leading-5 lg:leading-6 w-full sm:w-[221px] lg:w-[293px] ">
+            <motion.p
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: 100 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              className="text-white row-start-6 font-extralight text-sm sm:text-[13px] lg:text-lg sm:text-justify mt-auto sm:self-end leading-5 lg:leading-6 w-full sm:w-[221px] lg:w-[293px] ">
               {description}
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>

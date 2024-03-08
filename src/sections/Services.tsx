@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade } from 'swiper/modules';
 import 'swiper/css';
