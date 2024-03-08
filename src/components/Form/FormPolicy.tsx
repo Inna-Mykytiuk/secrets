@@ -1,6 +1,7 @@
 import Image from "next/image"
 
-import { FormPolicyProps } from '../../types/types'
+import { FormPolicyProps } from '@/types/types'
+import React from "react";
 
 const FormPolicy: React.FC<FormPolicyProps> = ({
   policy,
@@ -19,7 +20,7 @@ const FormPolicy: React.FC<FormPolicyProps> = ({
       />
       <label
         htmlFor="career-policy"
-        className="policy-agreement text-white pl-8 relative flex 
+        className="policy-agreement text-mainWhite pl-8 relative flex 
             text-xs font-extralight leading-[22px] lg:leading-6"
       >
         <Image

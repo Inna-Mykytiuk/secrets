@@ -280,7 +280,7 @@ img {
   }
 
   .promo {
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .phone-label::after {
@@ -297,7 +297,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1440) {
+@media screen and (min-width: 1440px) {
   .container {
     width: 1440px;
     margin: 0 auto;
@@ -306,7 +306,7 @@ img {
 
 @layer utilities {
   .navLink {
-    @apply text-white text-lg sm:text-sm font-normal transition duration-300 ease-in-out;
+    @apply text-mainWhite text-lg sm:text-sm font-normal transition duration-300 ease-in-out;
   }
 
   .section {
@@ -362,13 +362,13 @@ img {
   }
 
   .btn-anim {
-    @apply transition-colors hover:text-white/60 focus:text-white/60;
+    @apply transition-colors hover:text-mainWhite/60 focus:text-mainWhite/60;
   }
 
   .input {
-    @apply px-2 py-[2px] w-full block bg-white bg-opacity-5 text-white text-[13px] font-extralight leading-6 outline-none 
+    @apply px-2 py-[2px] w-full block bg-white bg-opacity-5 text-mainWhite text-[13px] font-extralight leading-6 outline-none 
   focus:outline-none focus:bg-opacity-10 hover:bg-opacity-10 
-  placeholder:text-white placeholder:opacity-[0.2]
+  placeholder:text-mainWhite placeholder:opacity-[0.2]
   sm:w-[222px] lg:w-[290px] lg:text-[20px] lg:leading-6 transition-all ease-in duration-200;
   }
 
@@ -386,7 +386,7 @@ img {
   }
 
   .section {
-    @apply mx-auto max-w-screen-x text-white
+    @apply mx-auto max-w-screen-x text-mainWhite
   sm:max-w-screen-sm sm:w-[768px]
   lg:max-w-screen-lg lg:w-[1280px];
   }

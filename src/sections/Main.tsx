@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { SelectedPage } from '../types/types'
+import { SelectedPage } from '@/types/types'
 import Navbar from '../components/Header/Navbar'
 import HeroContent from '../components/Header/HeroContent'
 import AboutUs from './AboutUs'

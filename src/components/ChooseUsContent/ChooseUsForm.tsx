@@ -4,13 +4,14 @@ import { toast } from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import useFormPersist from 'react-hook-form-persist';
 
-import { FormData } from "../../types/types";
-import { CareerFormInfo } from "../../data/career";
+import { FormData } from "@/types/types";
+import { CareerFormInfo } from "@/data/career";
 
 import FormInput from "../Form/FormInput";
 import FormTextArea from "../Form/FormTextArea";
 import FormPolicy from "../Form/FormPolicy";
 import FormButton from "../Form/FormButton";
+import React from "react";
 
 export const ChooseUsForm: React.FC = () => {
   const { register, handleSubmit, reset, watch, setValue, formState: { errors } } = useForm<FormData>();
@@ -30,7 +31,7 @@ export const ChooseUsForm: React.FC = () => {
   return (
     <>
       <p
-        className="ml-auto text-white mb-9 w-[179px] text-sm font-extralight leading-5 sm:ml-0 sm:mb-[28px] sm:w-[221px] sm:text-[13px] sm:leading-[20px] lg:mb-[14px] lg:w-[234px] lg:text-lg lg:leading-6"
+        className="ml-auto text-mainWhite mb-9 w-[179px] text-sm font-extralight leading-5 sm:ml-0 sm:mb-[28px] sm:w-[221px] sm:text-[13px] sm:leading-[20px] lg:mb-[14px] lg:w-[234px] lg:text-lg lg:leading-6"
       >
         {description}
       </p>
@@ -72,7 +73,7 @@ export const ChooseUsForm: React.FC = () => {
 
         <FormButton
           aria-label="Button send"
-          btnStyles=" text-white mt-4 sm:m-0 lg:text-[32px] justify-self-end"
+          btnStyles=" text-mainWhite mt-4 sm:m-0 lg:text-[32px] justify-self-end"
         />
 
       </form>

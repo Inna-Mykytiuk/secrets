@@ -5,12 +5,13 @@ import { useForm } from "react-hook-form";
 import useFormPersist from 'react-hook-form-persist';
 import { motion } from "framer-motion";
 
-import { FormData } from "../../types/types";
-import { ContactFormInfo } from "../../data/contacts";
+import { FormData } from "@/types/types";
+import { ContactFormInfo } from "@/data/contacts";
 
 import FormButton from "../Form/FormButton";
 import FormInput from "../Form/FormInput";
 import FormTextArea from "../Form/FormTextArea";
+import React from "react";
 
 const ContactForm: React.FC = () => {
   const { register, handleSubmit, reset, watch, setValue, formState: { errors } } = useForm<FormData>();
@@ -62,7 +63,7 @@ const ContactForm: React.FC = () => {
         />
         <FormButton
           aria-label="Button send"
-          btnStyles="text-white lg:mr-2"
+          btnStyles="text-mainWhite lg:mr-2"
         />
       </div>
     </motion.form>

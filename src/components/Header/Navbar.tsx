@@ -1,9 +1,9 @@
 'use client'
 
-import { useEffect, useState } from "react";
-import { SelectedPage } from "../../types/types";
+import { useEffect } from "react";
+import { SelectedPage } from "@/types/types";
 import useMediaQuery from "../../hooks/useMediaQuery";
-import { useToggle } from "../../hooks/useToggle";
+import { useToggle } from "@/hooks/useToggle";
 import Link from "./Links";
 import Logo from "./Logo";
 
@@ -13,7 +13,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
+const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
 
   const isAboveMediumScreens = useMediaQuery("(min-width: 768px)");
   const { isOpen, toggle, close } = useToggle(false);
@@ -54,7 +54,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           {/* RIGHT SIDE */}
           {isAboveMediumScreens ? (
             <div className='flexBetween'>
-              <div className='flexCenter gap-[24px] md:gap-[56px] text-white textNormal tracking-normal'>
+              <div className='flexCenter gap-[24px] md:gap-[56px] text-mainWhite textNormal tracking-normal'>
                 <Link
                   page="About"
                   selectedPage={selectedPage}
@@ -90,7 +90,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           ) : (
             <button
               aria-label="toggle menu button open"
-              className=" text-white textNormal cursor-pointer block uppercase"
+              className=" text-mainWhite textNormal cursor-pointer block uppercase"
               onClick={toggle}
             >
               Menu
@@ -109,7 +109,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           <div className="flex justify-end pt-[43px] pr-[20px]">
             <button
               aria-label="toggle menu button close"
-              className=" text-white textNormal cursor-pointer block uppercase"
+              className=" text-mainWhite textNormal cursor-pointer block uppercase"
               onClick={toggle}
             >
               Close
@@ -117,7 +117,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           </div>
 
           {/* MENU ITEMS */}
-          <div className="mx-auto flex flex-col items-center justify-center gap-12 text-lg h-full text-white ">
+          <div className="mx-auto flex flex-col items-center justify-center gap-12 text-lg h-full text-mainWhite ">
             <Link
               page="About"
               selectedPage={selectedPage}

@@ -65,11 +65,11 @@ const GallerySlider = () => {
       >
         <Button
           aria-label="Button previous"
-          className="text-white button-prev text-[33px] font-thin" label="back" type="button" />
+          className="text-mainWhite button-prev text-[33px] font-thin" label="back" type="button" />
 
         <Button
           aria-label="Button next"
-          className="text-white button-next text-[33px] font-thin" label="next" type="button" />
+          className="text-mainWhite button-next text-[33px] font-thin" label="next" type="button" />
       </div>
     </div>
   );

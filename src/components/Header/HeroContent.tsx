@@ -38,7 +38,7 @@ const HeroContent = () => {
 
             className='hidden sm:flex sm:flex-col'>
             <p className='text-[67px] lg:text-[98px] font-thin text-mainWhite uppercase tracking-[3.9px] lg:tracking-[0.9px]'><span className='text-[67px] lg:text-[98px] font-medium'>7</span>DAYS</p>
-            <p className='text-base font-300 text-mainWhite tracking-[21.9px] lg:tracking-[32.9px] mt-[-25px] uppercase'>JOURNEY</p>
+            <p className='text-base font-light text-mainWhite tracking-[21.9px] lg:tracking-[32.9px] mt-[-25px] uppercase'>JOURNEY</p>
           </motion.div>
           <div>
             <p className='text mb-6 sm:mb-7'>We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!

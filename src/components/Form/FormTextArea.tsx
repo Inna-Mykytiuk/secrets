@@ -1,4 +1,5 @@
-import { FormTextAreaProps } from '../../types/types'
+import { FormTextAreaProps } from '@/types/types'
+import React from "react";
 
 const FormTextArea: React.FC<FormTextAreaProps> = ({
   textarea,

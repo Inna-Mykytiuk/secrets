@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
-import { SelectedPage } from '../types/types'
+import { SelectedPage } from '@/types/types'
 import ChooseUsContent from '../components/ChooseUsContent/ChooseUsContent';
 import ChooseUsForm from '../components/ChooseUsContent/ChooseUsForm';
 
@@ -10,7 +10,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 }
 
-const Career: React.FC<Props> = ({ setSelectedPage }) => {
+const Career: React.FC<Props> = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
 
@@ -65,7 +65,7 @@ const Career: React.FC<Props> = ({ setSelectedPage }) => {
                 Your chance to join our passionate team in Carpathian tourism. Seeking talented professionals to share our common mission.
               </p>
             </div>
-            <h3 className='flex lg:hidden text-white text-3xl font-extralight uppercase leading-none ml-[100px] sm:ml-[80px] mb-9 sm:mb-14'>Why Us ?</h3>
+            <h3 className='flex lg:hidden text-mainWhite text-3xl font-extralight uppercase leading-none ml-[100px] sm:ml-[80px] mb-9 sm:mb-14'>Why Us ?</h3>
           </div>
 
           <div className='flex flex-col sm:flex-row'>

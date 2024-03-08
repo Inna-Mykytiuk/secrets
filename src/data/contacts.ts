@@ -1,5 +1,4 @@
-import { ContactData, ContactForm } from "../types/types";
-
+import { ContactData, ContactForm } from "@/types/types";
 export const ContactsInfo: ContactData = {
 
   phone: {

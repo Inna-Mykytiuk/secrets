@@ -2,7 +2,7 @@
 
 import React, { FC, useState, useEffect } from 'react';
 import Image from 'next/image';
-import { ServicesSlideInfoProps } from '../../types/types';
+import { ServicesSlideInfoProps } from '@/types/types';
 import SlideList from './SlideList';
 import { motion } from "framer-motion";
 
@@ -94,7 +94,7 @@ const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, han
                 hidden: { opacity: 0, x: 100 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className="text-white row-start-6 font-extralight text-sm sm:text-[13px] lg:text-lg sm:text-justify mt-auto sm:self-end leading-5 lg:leading-6 w-full sm:w-[221px] lg:w-[293px] ">
+              className="text-mainWhite row-start-6 font-extralight text-sm sm:text-[13px] lg:text-lg sm:text-justify mt-auto sm:self-end leading-5 lg:leading-6 w-full sm:w-[221px] lg:w-[293px] ">
               {description}
             </motion.p>
           </div>

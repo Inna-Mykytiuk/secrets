@@ -1,14 +1,13 @@
 'use client'
 import React from 'react'
 import { motion } from "framer-motion";
-import { SelectedPage } from '../types/types'
+import { SelectedPage } from '@/types/types'
 
 type Props = {
-  children?: React.ReactNode;
   setSelectedPage: (value: SelectedPage) => void;
 }
 
-const AboutUs = ({ setSelectedPage }: Props) => {
+const AboutUs: React.FC<Props> = () => {
   return (
     <section
       className=' w-full h-full bg-cover bg-center sm:bg-left bg-no-repeat bg-aboutMob1 sm:bg-about py-[55px] sm:py-[64px] lg:py-[104px]  lg:bg-about'
@@ -40,9 +39,9 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                     visible: { opacity: 1, x: 0 },
                   }}
                   className='flex flex-col w-[218px] absolute bottom-0 left-0'>
-                  <p className='text-white text-base font-normal leading-5 uppercase text-start'>From vacationers</p>
-                  <p className='text-white text-base font-normal leading-5 uppercase text-end'>to active travelers</p>
-                  <p className='text-white text-base font-extralight leading-6 text-start tracking-[-0.14px] lg:tracking-[2.1px]'>we have a tour for everyone.</p>
+                  <p className='text-mainWhite text-base font-normal leading-5 uppercase text-start'>From vacationers</p>
+                  <p className='text-mainWhite text-base font-normal leading-5 uppercase text-end'>to active travelers</p>
+                  <p className='text-mainWhite text-base font-extralight leading-6 text-start tracking-[-0.14px] lg:tracking-[2.1px]'>we have a tour for everyone.</p>
                 </motion.div>
               </div>
             </div>
@@ -64,9 +63,9 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                   visible: { opacity: 1, x: 0 },
                 }}
                 className='flex flex-col  w-[180px] lg:w-[296px]'>
-                <p className='text-white text-sm lg:text-lg font-normal leading-5 uppercase text-start'>From vacationers</p>
-                <p className='text-white text-sm lg:text-lg font-normal leading-5 uppercase text-end'>to active travelers</p>
-                <p className='text-white text-sm lg:text-lg font-extralight leading-6 text-start tracking-[-0.14px] lg:tracking-[2.1px]'>we have a tour for everyone.</p>
+                <p className='text-mainWhite text-sm lg:text-lg font-normal leading-5 uppercase text-start'>From vacationers</p>
+                <p className='text-mainWhite text-sm lg:text-lg font-normal leading-5 uppercase text-end'>to active travelers</p>
+                <p className='text-mainWhite text-sm lg:text-lg font-extralight leading-6 text-start tracking-[-0.14px] lg:tracking-[2.1px]'>we have a tour for everyone.</p>
               </motion.div>
             </div>
           </div>

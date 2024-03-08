@@ -5,14 +5,14 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 
-import { SelectedPage } from '../types/types'
+import { SelectedPage } from '@/types/types'
 import GallerySlider from '../components/GallerySlider/Slider';
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 }
 
-const Gallery: React.FC<Props> = ({ setSelectedPage }) => {
+const Gallery: React.FC<Props> = () => {
 
   return (
 

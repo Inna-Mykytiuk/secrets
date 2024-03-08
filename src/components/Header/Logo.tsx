@@ -4,7 +4,7 @@ import logo from '../../../public/icons/logo.png'
 
 const Logo = () => {
   return (
-    <Link href='/' className='flex flex-col text-white text-sm font-normal tracking-wide font-karantina cursor-pointer'>
+    <Link href='/' className='flex flex-col text-mainWhite text-sm font-normal tracking-wide font-karantina cursor-pointer'>
       <Image
         src={logo}
         alt='travel logo'

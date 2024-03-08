@@ -1,4 +1,4 @@
-import { CareerForm } from "../types/types";
+import { CareerForm } from "@/types/types";
 
 export const CareerFormInfo: CareerForm = {
   description:

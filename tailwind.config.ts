@@ -7,7 +7,6 @@ module.exports = {
     "./src/ui/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/aseets/**/*.{js,ts,jsx,tsx,mdx,css,png.jpg}",
   ],
   theme: {
     extend: {
@@ -26,7 +25,6 @@ module.exports = {
         white: "#fff",
         black: "rgba(0,0,0,0.9)",
         overlay: "rgba(1, 10, 5, 0.92)",
-        unActiveImage: "rgba(9, 20, 16, 0.25)",
         light1: "rgba(255, 255, 255, 0.1)",
         light2: "rgba(255, 255, 255, 0.2)",
         input: "rgba(255, 255, 255, 0.05)",
@@ -45,17 +43,6 @@ module.exports = {
         widest: ".1em",
         large: "2.28em",
       },
-      fontWeight: {
-        100: "100",
-        200: "200",
-        300: "300",
-        400: "400",
-        500: "500",
-        600: "600",
-        700: "700",
-        800: "800",
-        900: "900",
-      },
       screens: {
         xs: "320px",
         x: "480px",
@@ -68,25 +55,7 @@ module.exports = {
         mdOnly: { min: "768px", max: "1279.98px" },
       },
       colors: {
-        mainGray: "#181716",
         mainWhite: "#ffffff",
-
-        borderDark: "#78814d",
-        borderLight: "#b3bb8c",
-        borderBg: "#c4c8b1",
-
-        gray20: "#4e5431",
-        gray50: "#EFE6E6",
-        gray100: "#DFCCCC",
-        gray500: "#5E0000",
-
-        primary100: "#FFE1E0",
-        primary200: "#c9cbbf",
-        primary300: "#FFA6A3",
-        primary500: "#FF6B66",
-        secondary400: "#FFCD5B",
-        secondary500: "#FFC132",
-
         backdrop: "rgba(1, 10, 5, 0.75)",
         red: "#FF5757",
       },

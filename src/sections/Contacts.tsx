@@ -1,14 +1,13 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import { SelectedPage } from '../types/types'
+import { SelectedPage } from '@/types/types'
 import ContactInfo from '../components/Contacts/ContactInfo'
 import ContactForm from '../components/Contacts/ContactsForm'
 
 type Props = {
-  children?: React.ReactNode;
   setSelectedPage: (value: SelectedPage) => void;
 }
-const Contacts = ({ setSelectedPage }: Props) => {
+const Contacts: React.FC<Props> = () => {
   return (
     <section
       className=' w-full h-full bg-cover bg-center sm:bg-left bg-no-repeat bg-contactUs py-[55px] sm:py-[64px] lg:py-[104px] '
