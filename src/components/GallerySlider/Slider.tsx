@@ -11,7 +11,7 @@ import Button from './Button';
 
 const GallerySlider = () => {
   return (
-    <div className="relative mx-auto px-[20px] sm:w-[768px] sm:px-[32px] lg:w-[1280px] lg:px-0 smOnly:max-w-[480px]">
+    <div className="relative mx-auto px-5 sm:w-[768px] sm:px-8 lg:w-[1280px] lg:px-0 smOnly:max-w-[480px]">
       <Swiper
         className="gallery h-[609px] sm:h-[295px] lg:h-[430px]"
         wrapperTag="ul"

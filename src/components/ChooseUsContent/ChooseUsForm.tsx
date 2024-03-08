@@ -31,7 +31,7 @@ export const ChooseUsForm: React.FC = () => {
   return (
     <>
       <p
-        className="ml-auto text-mainWhite mb-9 w-[179px] text-sm font-extralight leading-5 sm:ml-0 sm:mb-[28px] sm:w-[221px] sm:text-[13px] sm:leading-[20px] lg:mb-[14px] lg:w-[234px] lg:text-lg lg:leading-6"
+        className="ml-auto text-mainWhite mb-9 w-[179px] text-sm font-extralight leading-5 sm:ml-0 sm:mb-7 sm:w-[221px] sm:text-[13px] sm:leading-5 lg:mb-3.5 lg:w-[234px] lg:text-lg lg:leading-6"
       >
         {description}
       </p>
@@ -45,7 +45,7 @@ export const ChooseUsForm: React.FC = () => {
         <div className="flex flex-col">
 
           {inputs.map(inputInfo =>
-            <div className="mb-4 flex flex-col relative sm:mb-[16px] lg:mb-[26px]" key={inputInfo.id}>
+            <div className="mb-4 flex flex-col relative sm:mb-4 lg:mb-[26px]" key={inputInfo.id}>
               <FormInput
                 inputInfo={inputInfo}
                 register={register}

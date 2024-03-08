@@ -19,7 +19,7 @@ const menuSlider: string[] = [
 const SlideList: FC<SlideListProps> = ({ activeSlide, onMenuButtonClick }) => {
   return (
 
-    <ul className=" w-full flex flex-col list-none p-0 gap-4 z-[100]  lg:gap-6 mb-[25px] lg:mb-0">
+    <ul className=" w-full flex flex-col list-none p-0 gap-4 z-[100] lg:gap-6 mb-[25px] lg:mb-0">
       {menuSlider.map((item, idx) => (
         <li
           key={item + idx}

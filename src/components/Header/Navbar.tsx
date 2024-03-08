@@ -44,7 +44,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
   }, [isOpen]);
 
   return (
-    <nav className='w-full pt-[36px] pb-[36px] sm:pt-[25px] sm:pb-[66px] lg:pt-[24px] lg:pb-[50px] absolute '>
+    <nav className='w-full pt-9 pb-9 sm:pt-[25px] sm:pb-[66px] lg:pt-6 lg:pb-[50px] absolute '>
 
       <div className='container'>
         <div className='flexBetween w-full gap-16'>
@@ -54,7 +54,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
           {/* RIGHT SIDE */}
           {isAboveMediumScreens ? (
             <div className='flexBetween'>
-              <div className='flexCenter gap-[24px] md:gap-[56px] text-mainWhite textNormal tracking-normal'>
+              <div className='flexCenter gap-6 md:gap-[56px] text-mainWhite textNormal tracking-normal'>
                 <Link
                   page="About"
                   selectedPage={selectedPage}

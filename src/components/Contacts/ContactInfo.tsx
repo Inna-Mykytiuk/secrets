@@ -7,7 +7,7 @@ const ContactInfo: React.FC = () => {
 
   return (
     <ul
-      className="pb-[12px] ml-auto w-[280px] 
+      className="pb-3 ml-auto w-[280px] 
         sm:ml-[34px] sm:mr-auto sm:mb-16 sm:pb-0 
         sm:w-[525px] sm:h-[96px] sm:flex sm:flex-col sm:flex-wrap
         lg:m-0 lg:w-1/2 lg:h-auto lg:flex-nowrap"
@@ -16,7 +16,7 @@ const ContactInfo: React.FC = () => {
       <li className="mb-6 flex flex-row-reverse gap-5 lg:mb-16">
         <span
           className="textContentXS w-[81px] text-xs font-extralight leading-5 
-            sm:pt-1 lg:mr-[12px] lg:w-[300px]"
+            sm:pt-1 lg:mr-3 lg:w-[300px]"
         >
           {phone.name}
         </span>
@@ -41,7 +41,7 @@ const ContactInfo: React.FC = () => {
       <li className="mb-[26px] flex flex-row-reverse gap-5 sm:mb-0 lg:mb-[124px]">
         <span
           className="textContentXS w-[81px] text-xs font-extralight leading-5 
-            sm:pt-1 lg:mr-[12px] lg:w-[300px]"
+            sm:pt-1 lg:mr-3 lg:w-[300px]"
         >
           {email.name}
         </span>
@@ -66,7 +66,7 @@ const ContactInfo: React.FC = () => {
       <li className="flex gap-5 sm:ml-[90px] lg:flex-row-reverse">
         <span
           className="textContentXS w-[180px] text-right text-xs font-extralight leading-5 
-            sm:w-auto sm:pt-1 lg:mr-[12px] lg:w-[300px] lg:text-left"
+            sm:w-auto sm:pt-1 lg:mr-3 lg:w-[300px] lg:text-left"
         >
           {socials.name}
         </span>
