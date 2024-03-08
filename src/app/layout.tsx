@@ -4,9 +4,31 @@ import { Toaster } from 'react-hot-toast'
 
 
 export const metadata: Metadata = {
-  title: "Uncover Carpathian’s Secrets",
-  description: "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
-};
+  title: 'CarpTravel',
+  description: "Uncover Carpathian’s Secrets",
+  icons: [
+    {
+      url: '/icons/favicon-dark.svg',
+      media: '(prefers-color-scheme: dark)',
+      rel: 'icon',
+      type: 'image/svg',
+    },
+    {
+      url: '/icons/favicon-light.svg',
+      media: '(prefers-color-scheme: light)',
+      rel: 'icon',
+      type: 'image/svg',
+    },
+  ],
+  openGraph: {
+    type: 'website',
+    url: 'https://https://secrets-tan.vercel.app/',
+    title: 'CarpTravel',
+    description: 'Uncover Carpathian’s Secrets',
+    siteName: 'CarpTravel',
+    images: [{ url: '/ogp/logo.jpg' }, { url: '/ogp/logo.png' }],
+  },
+}
 
 export default function RootLayout({
   children,
