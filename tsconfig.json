@@ -24,7 +24,6 @@
     "forceConsistentCasingInFileNames": true
   },
   "include": [
-    "src",
     "svgr.d.ts",
     "next-env.d.ts",
     "**/*.ts",

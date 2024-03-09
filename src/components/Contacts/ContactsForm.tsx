@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react";
 import { toast } from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import useFormPersist from 'react-hook-form-persist';
@@ -11,7 +12,6 @@ import { ContactFormInfo } from "@/data/contacts";
 import FormButton from "../Form/FormButton";
 import FormInput from "../Form/FormInput";
 import FormTextArea from "../Form/FormTextArea";
-import React from "react";
 
 const ContactForm: React.FC = () => {
   const { register, handleSubmit, reset, watch, setValue, formState: { errors } } = useForm<FormData>();

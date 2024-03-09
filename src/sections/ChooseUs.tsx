@@ -59,13 +59,12 @@ const Career: React.FC<Props> = () => {
                   hidden: { opacity: 0, x: -100 },
                   visible: { opacity: 1, x: 0 },
                 }}
-
                 className='w-full sm:w-auto title sm:leading-none leading-[56px] mb-6 sm:mb-0 sm:items-center self-center'>Choose  <span className='leading-none titleBold'>Us</span></motion.h2>
               <p className='w-[179px] text-start paragraph sm:w-[221px] lg:w-[293px] sm:text-justify  ml-auto sm:ml-0'>
                 Your chance to join our passionate team in Carpathian tourism. Seeking talented professionals to share our common mission.
               </p>
             </div>
-            <h3 className='flex lg:hidden text-mainWhite text-3xl font-extralight uppercase leading-none ml-[100px] sm:ml-[80px] mb-9 sm:mb-14'>Why Us ?</h3>
+            <h2 className='flex lg:hidden text-mainWhite text-3xl font-extralight uppercase leading-none ml-[100px] sm:ml-[80px] mb-9 sm:mb-14'>Why Us ?</h2>
           </div>
 
           <div className='flex flex-col sm:flex-row'>
