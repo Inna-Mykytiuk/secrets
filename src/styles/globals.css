@@ -309,24 +309,12 @@ img {
     @apply text-mainWhite text-lg sm:text-sm font-normal transition duration-300 ease-in-out;
   }
 
-  .section {
-    @apply flex min-h-screen flex-col items-center;
-  }
-
   .flexCenter {
     @apply flex items-center justify-center;
   }
 
   .flexBetween {
     @apply flex items-center justify-between;
-  }
-
-  .flexStart {
-    @apply flex items-center justify-start;
-  }
-
-  .flexEnd {
-    @apply flex items-center justify-end;
   }
 
   .flexColumn {
@@ -366,10 +354,7 @@ img {
   }
 
   .input {
-    @apply px-2 py-[2px] w-full block bg-white bg-opacity-5 text-mainWhite text-[13px] font-extralight leading-6 outline-none 
-  focus:outline-none focus:bg-opacity-10 hover:bg-opacity-10 
-  placeholder:text-mainWhite placeholder:opacity-[0.2]
-  sm:w-[222px] lg:w-[290px] lg:text-[20px] lg:leading-6 transition-all ease-in duration-200;
+    @apply px-2 py-[2px] w-full block bg-white bg-opacity-5 text-mainWhite text-[13px] font-extralight leading-6 outline-none focus:outline-none focus:bg-opacity-10 hover:bg-opacity-10 placeholder:text-mainWhite placeholder:opacity-[0.2] sm:w-[222px] lg:w-[290px] lg:text-[20px] lg:leading-6 transition-all ease-in duration-200;
   }
 
   .label {
@@ -386,9 +371,7 @@ img {
   }
 
   .section {
-    @apply mx-auto max-w-screen-x text-mainWhite
-  sm:max-w-screen-sm sm:w-[768px]
-  lg:max-w-screen-lg lg:w-[1280px];
+    @apply mx-auto max-w-screen-x text-mainWhite sm:max-w-screen-sm sm:w-[768px] lg:max-w-screen-lg lg:w-[1280px];
   }
 }
 
