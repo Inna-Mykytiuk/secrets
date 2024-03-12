@@ -1,6 +1,6 @@
+import React from "react";
 import { ContactsInfo } from "@/data/contacts"
 import { reformatPhoneNumber } from "@/data/changeFormat";
-import React from "react";
 
 const ContactInfo: React.FC = () => {
   const { phone, email, socials } = ContactsInfo;

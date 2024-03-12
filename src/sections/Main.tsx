@@ -32,13 +32,13 @@ const Main = () => {
 
   return (
     <>
-      <div className='w-full h-full bg-cover bg-center bg-no-repeat bg-heroMob sm:bg-heroTab lg:bg-heroDesk'>
+      <section className='w-full h-full bg-cover bg-center bg-no-repeat bg-heroMob sm:bg-heroTab lg:bg-heroDesk'>
         <Navbar
           isTopOfPage={isTopOfPage}
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage} />
         <HeroContent />
-      </div >
+      </ section>
       <AboutUs setSelectedPage={setSelectedPage} />
       <Services setSelectedPage={setSelectedPage} />
       <ChooseUs setSelectedPage={setSelectedPage} />
