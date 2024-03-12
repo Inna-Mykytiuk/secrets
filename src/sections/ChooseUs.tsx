@@ -43,7 +43,7 @@ const Career: React.FC<Props> = () => {
     <>
       <section
         id="career"
-        className="w-full bg-cover bg-top bg-repeat sm:bg-no-repeat bg-chooseUs sm:py-[64px] lg:py-[104px] py-[55px] "
+        className="w-full bg-cover bg-top bg-repeat sm:bg-no-repeat bg-chooseUsMob sm:bg-chooseUsTab lg:bg-chooseUsDesk sm:py-[64px] lg:py-[104px] py-[55px] "
       >
         <div
           className="container"
@@ -90,7 +90,7 @@ const Career: React.FC<Props> = () => {
       {isMobile && (
         <section
           id="career"
-          className="career career-mob relative bg-cover bg-no-repeat bg-top bg-chooseUs py-[55px] "
+          className="career career-mob relative bg-cover bg-no-repeat bg-top bg-chooseUsMob py-[55px] "
         >
           <div className="container">
             <ChooseUsForm />
