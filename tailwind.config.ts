@@ -12,6 +12,9 @@ module.exports = {
     extend: {
       backgroundImage: () => ({
         hero: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/hero.png)`,
+        heroDesk: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), image-set(url('/images/sections/hero-desk.png') 1x, url('/images/sections/hero@2x-desk.png') 2x)`,
+        heroTab: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), image-set(url('/images/sections/hero-tab.png') 1x, url('/images/sections/hero@2x-tab.png') 2x)`,
+        heroMob: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), image-set(url('/images/sections/hero-mob.png') 1x, url('/images/sections/hero@2x-mob.png') 2x)`,
         about: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/weAre.png)`,
         aboutMob: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/weAreMob1.png)`,
         aboutMob1: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),url(/images/sections/weAreMob.png)`,

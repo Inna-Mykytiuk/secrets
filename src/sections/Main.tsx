@@ -32,7 +32,7 @@ const Main = () => {
 
   return (
     <>
-      <div className='w-full h-full bg-cover bg-center bg-no-repeat bg-hero'>
+      <div className='w-full h-full bg-cover bg-center bg-no-repeat bg-heroMob sm:bg-heroTab lg:bg-heroDesk'>
         <Navbar
           isTopOfPage={isTopOfPage}
           selectedPage={selectedPage}

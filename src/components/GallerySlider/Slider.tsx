@@ -38,10 +38,10 @@ const GallerySlider = () => {
           <SwiperSlide tag="li" key={index} className="gallery-slider">
             {({ isActive }) => (
               <div
-                className={`image-wrapper  relative h-[187px] transition-all duration-700 ease-[cubic-bezier(.57,.21,.69,1.25)]
+                className={`image-wrapper relative h-[187px] transition-all duration-700 ease-[cubic-bezier(.57,.21,.69,1.25)]
                 ${isActive
                     ? 'before:hidden sm:h-[294px] sm:w-[415px] lg:h-[429px] lg:w-[606px] opacity-1'
-                    : ' sm:h-[87px] sm:w-[121px] lg:h-[225px] lg:w-[313px] smOnly:before:hidden opacity-0.5'
+                    : 'sm:h-[87px] sm:w-[121px] lg:h-[225px] lg:w-[313px] smOnly:before:hidden opacity-0.5'
                   }  `}
               >
                 <Image
@@ -59,16 +59,16 @@ const GallerySlider = () => {
       </Swiper>
 
       <div
-        className="absolute bottom-0 z-10 sm:left-[75px] sm:flex sm:gap-[459px] lg:left-[235px] 
+        className="absolute bottom-0 z-10 sm:left-[75px] sm:flex sm:gap-[459px] lg:left-[228px] 
       lg:gap-[651px] smOnly:hidden"
       >
         <Button
           aria-label="Button previous"
-          className="text-mainWhite button-prev text-[33px] font-thin" label="back" type="button" />
+          className="text-mainWhite button-prev text-[33px] font-thin transition-all duration-300 ease-in-out" label="back" type="button" />
 
         <Button
           aria-label="Button next"
-          className="text-mainWhite button-next text-[33px] font-thin" label="next" type="button" />
+          className="text-mainWhite button-next text-[33px] font-thin transition-all duration-300 ease-in-out" label="next" type="button" />
       </div>
     </div>
   );

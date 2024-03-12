@@ -299,6 +299,13 @@ img {
 
 @media screen and (min-width: 1440px) {
   .container {
+    width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  .container {
     width: 1440px;
     margin: 0 auto;
   }
