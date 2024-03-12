@@ -81,4 +81,5 @@ To run the application locally, follow these steps:
 7. TypeScript:
    TypeScript is a strict syntactical superset of JavaScript, introducing optional static typing to the CarpTravel project. With version 5.3.3, TypeScript aids in catching potential errors during development, improving code quality, and enhancing collaboration within the development team. The optional static typing provides additional clarity and documentation for the codebase, contributing to the overall maintainability of the CarpTravel website.
 
-![preview](https://github.com/Inna-Mykytiuk/secrets/blob/main/public/assets/images/.jpg)
+![preview](https://github.com/Inna-Mykytiuk/secrets/blob/main/public/presentation1.jpg)
+![preview](https://github.com/Inna-Mykytiuk/secrets/blob/main/public/presentation2.jpg)
