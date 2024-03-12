@@ -61,7 +61,7 @@ const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, han
           src={img}
           width={280}
           height={213}
-          className="mb-3 row-start-3 w-full sm:w-[463px] sm:mb-0 sm:h-[370px] lg:w-[607px] lg:h-[429px]"
+          className="mb-3 row-start-3 w-full h-full sm:w-[463px] sm:mb-0 sm:h-[370px] lg:w-[607px] lg:h-[429px]"
         />
         <div
           className={`flex sm:hidden promo self-end sm:self-start text-mainWhite text-xs font-extralight leading-6 mb-6 text-end`}
