@@ -23,8 +23,16 @@ module.exports = {
         chooseUsTab: `linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url('/images/sections/chooseUs-tab.png') 1x, url('/images/sections/chooseUs@2x-tab.png') 2x)`,
         chooseUsMob: `linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url('/images/sections/chooseUs-mob.png') 1x, url('/images/sections/chooseUs@2x-mob.png') 2x)`,
 
-        contactUs: `linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),url(/images/sections/contactUs.png)`,
         ourGallery: `linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.85)),url(/images/sections/ourGallery.png)`,
+
+        galleryDesk: `linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), rgba(2, 15, 8, 0.5)), image-set(url('/images/sections/ourGallery-desk.png') 1x, url('/images/sections/ourGallery@2x-desk.png') 2x)`,
+        galleryTab: `linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url('/images/sections/ourGallery-tab.png') 1x, url('/images/sections/ourGallery@2x-tab.png') 2x)`,
+        galleryMob: `linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url('/images/sections/ourGallery-mob.png') 1x, url('/images/sections/ourGallery@2x-mob.png') 2x)`,
+
+        contactUsDesk: `linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), rgba(2, 15, 8, 0.5)), image-set(url('/images/sections/contactUs-desk.png') 1x, url('/images/sections/contactUs@2x-desk.png') 2x)`,
+        contactUsTab: `linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url('/images/sections/contactUs-tab.png') 1x, url('/images/sections/contactUs@2x-tab.png') 2x)`,
+        contactUsMob: `linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url('/images/sections/contactUs-mob.png') 1x, url('/images/sections/contactUs@2x-mob.png') 2x)`,
+
         invalid: "url(/icons/invalid.svg)",
       }),
       backgroundColor: {

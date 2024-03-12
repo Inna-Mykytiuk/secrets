@@ -10,7 +10,7 @@ type Props = {
 const Contacts: React.FC<Props> = () => {
   return (
     <section
-      className=' w-full h-full bg-cover bg-center sm:bg-left bg-no-repeat bg-contactUs py-[55px] sm:py-[64px] lg:py-[104px] '
+      className=' w-full h-full bg-cover bg-center sm:bg-left bg-no-repeat bg-contactUsMob sm:bg-contactUsTab lg:bg-contactUsDesk py-[55px] sm:py-[64px] lg:py-[104px] '
       id="contacts"
     >
       <div className='container'>

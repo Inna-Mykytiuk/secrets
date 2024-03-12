@@ -17,7 +17,7 @@ const Gallery: React.FC<Props> = () => {
   return (
 
     <section id="gallery"
-      className='gallery-main relative z-10 w-full h-full bg-cover bg-left bg-no-repeat bg-ourGallery py-[55px] sm:py-[64px] lg:py-[104px]'>
+      className='gallery-main relative z-10 w-full h-full bg-cover bg-left bg-no-repeat bg-galleryMob sm:bg-galleryTab lg:bg-galleryDesk py-[55px] sm:py-[64px] lg:py-[104px]'>
       <div className="container">
         <motion.h2
           initial="hidden"
