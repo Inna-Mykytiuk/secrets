@@ -1,35 +1,15 @@
 'use client'
 
-import { useEffect } from "react";
-import { SelectedPage } from "@/types/types";
+import { useEffect, useState } from "react";
 import useMediaQuery from "../../hooks/useMediaQuery";
-import { useToggle } from "@/hooks/useToggle";
-import Link from "./Links";
+import { Link } from "react-scroll";
 import Logo from "./Logo";
+import MobileMenu, { MobileMenuProps } from "../MobileMenu/MobileMenu";
 
-type Props = {
-  isTopOfPage: boolean;
-  selectedPage: SelectedPage;
-  setSelectedPage: (value: SelectedPage) => void;
-};
 
-const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
-
+const Navbar = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 768px)");
-  const { isOpen, toggle, close } = useToggle(false);
-  const handleKeyPress = (event: KeyboardEvent) => {
-    if (event.key === "Escape" && isOpen) {
-      close();
-      event.preventDefault();
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("keydown", handleKeyPress);
-    return () => {
-      window.removeEventListener("keydown", handleKeyPress);
-    };
-  }, [isOpen]);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
@@ -43,113 +23,85 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
     };
   }, [isOpen]);
 
+  const handleOpen = () => {
+    setIsOpen(true);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
+    document.body.style.overflow = 'auto';
+  };
+
   return (
     <nav className='w-full pt-9 pb-9 sm:pt-[25px] sm:pb-[66px] lg:pt-6 lg:pb-[50px] absolute '>
 
       <div className='container'>
         <div className='flexBetween w-full gap-16'>
-          {/* LEFT SIDE */}
           <Logo />
-
-          {/* RIGHT SIDE */}
           {isAboveMediumScreens ? (
             <div className='flexBetween'>
               <div className='flexCenter gap-6 md:gap-[56px] text-mainWhite textNormal tracking-normal'>
                 <Link
-                  page="About"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                  close={close}
-                />
+                  to="about"
+                  smooth={true}
+                  href="#"
+                  ignoreCancelEvents={true}
+                  className="navLink footer-link"
+                >
+                  About
+                </Link>
                 <Link
-                  page="Services"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                  close={close}
-                />
+                  to="services"
+                  smooth={true}
+                  href="#"
+                  ignoreCancelEvents={true}
+                  className="navLink footer-link"
+                >
+                  Services
+                </Link>
                 <Link
-                  page="Career"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                  close={close}
-                />
+                  to="career"
+                  smooth={true}
+                  href="#"
+                  ignoreCancelEvents={true}
+                  className="navLink footer-link"
+                >
+                  Career
+                </Link>
                 <Link
-                  page="Gallery"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                  close={close}
-                />
+                  to="gallery"
+                  smooth={true}
+                  href="#"
+                  ignoreCancelEvents={true}
+                  className="navLink footer-link"
+                >
+                  Gallery
+                </Link>
                 <Link
-                  page="Contacts"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
-                  close={close}
-                />
+                  to="contacts"
+                  smooth={true}
+                  href="#"
+                  ignoreCancelEvents={true}
+                  className="navLink footer-link"
+                >
+                  Contacts
+                </Link>
               </div>
             </div>
           ) : (
             <button
               aria-label="toggle menu button open"
-              className=" text-mainWhite textNormal cursor-pointer block uppercase"
-              onClick={toggle}
+              className="text-mainWhite textNormal cursor-pointer block uppercase"
+              onClick={handleOpen}
             >
               Menu
             </button>
           )}
         </div>
       </div>
-
-
-      {/* MOBILE MENU MODAL */}
       {!isAboveMediumScreens && isOpen && (
-        <div
-          className="fixed right-0 bottom-0 z-40 h-full w-full bg-backdrop backdrop-blur-xl"
-        >
-          {/* CLOSE ICON */}
-          <div className="flex justify-end pt-[43px] pr-[20px]">
-            <button
-              aria-label="toggle menu button close"
-              className=" text-mainWhite textNormal cursor-pointer block uppercase"
-              onClick={toggle}
-            >
-              Close
-            </button>
-          </div>
-
-          {/* MENU ITEMS */}
-          <div className="mx-auto flex flex-col items-center justify-center gap-12 text-lg h-full text-mainWhite ">
-            <Link
-              page="About"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              close={close}
-            />
-            <Link
-              page="Services"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              close={close}
-            />
-            <Link
-              page="Career"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              close={close}
-            />
-            <Link
-              page="Gallery"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              close={close}
-            />
-            <Link
-              page="Contacts"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              close={close}
-            />
-          </div>
-        </div>
+        <MobileMenu isOpen={isOpen} onClose={handleClose} />
       )}
     </nav>
   );

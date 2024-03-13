@@ -1,14 +1,5 @@
 import { FieldErrors, UseFormRegister, ValidationRule } from "react-hook-form";
 
-export enum SelectedPage {
-  // Home = "home",
-  About = "about",
-  Services = "services",
-  Career = "career",
-  Gallery = "gallery",
-  Contacts = "contacts",
-}
-
 export type ButtonProps = {
   className?: string;
   onClick?: () => void;

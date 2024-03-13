@@ -380,6 +380,10 @@ img {
   .section {
     @apply mx-auto max-w-screen-x text-mainWhite sm:max-w-screen-sm sm:w-[768px] lg:max-w-screen-lg lg:w-[1280px];
   }
+
+  .links {
+    @apply no-underline text-[14px] leading-none tracking-[1.4px];
+  }
 }
 
 .gallery .swiper-wrapper {

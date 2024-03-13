@@ -1,13 +1,13 @@
 'use client'
 import React from 'react'
 import { motion } from "framer-motion";
-import { SelectedPage } from '@/types/types'
+// import { SelectedPage } from '@/types/types'
 
-type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
-}
+// type Props = {
+//   setSelectedPage: (value: SelectedPage) => void;
+// }
 
-const AboutUs: React.FC<Props> = () => {
+const AboutUs = () => {
   return (
     <section
       className=' w-full h-full bg-cover bg-center sm:bg-left bg-no-repeat bg-aboutMob sm:bg-aboutTab lg:bg-aboutDesk py-[55px] sm:py-[64px] lg:py-[104px]'

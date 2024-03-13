@@ -2,15 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
-import { SelectedPage } from '@/types/types'
 import ChooseUsContent from '../components/ChooseUsContent/ChooseUsContent';
 import ChooseUsForm from '../components/ChooseUsContent/ChooseUsForm';
 
-type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
-}
 
-const Career: React.FC<Props> = () => {
+const Career = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
 

@@ -1,13 +1,11 @@
+'use client'
+
 import React from 'react'
 import { motion } from "framer-motion";
-import { SelectedPage } from '@/types/types'
 import ContactInfo from '../components/Contacts/ContactInfo'
 import ContactForm from '../components/Contacts/ContactsForm'
 
-type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
-}
-const Contacts: React.FC<Props> = () => {
+const Contacts = () => {
   return (
     <section
       className=' w-full h-full bg-cover bg-center sm:bg-left bg-no-repeat bg-contactUsMob sm:bg-contactUsTab lg:bg-contactUsDesk py-[55px] sm:py-[64px] lg:py-[104px] '

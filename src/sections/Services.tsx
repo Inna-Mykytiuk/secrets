@@ -9,15 +9,11 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/swiper-bundle.css';
 
-import { SelectedPage } from '@/types/types';
 import SlideInfo from '../components/ServicesContent/SlideInfo';
 import services from '../data/services.json'
 
 
-type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
-}
-const Services: React.FC<Props> = () => {
+const Services = () => {
   const [swiper, setSwiper] = useState<any>(null);
   const [activeSlide, setActiveSlide] = useState(0);
 
