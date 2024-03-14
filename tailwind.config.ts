@@ -53,8 +53,6 @@ module.exports = {
         base: "0.09em",
         normal: "0.1em",
         wide: ".18em",
-        wider: ".05em",
-        widest: ".1em",
         large: "2.28em",
       },
       screens: {
