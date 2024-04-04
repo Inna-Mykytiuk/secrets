@@ -3,7 +3,10 @@ import "../styles/globals.css";
 import { Toaster } from 'react-hot-toast'
 
 
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL as string;
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: 'CarpTravel',
   description: "Uncover Carpathian’s Secrets",
   icons: [
@@ -22,11 +25,11 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: 'website',
-    url: 'https://https://secrets-tan.vercel.app/',
+    url: `${baseUrl}`,
     title: 'CarpTravel',
     description: 'Uncover Carpathian’s Secrets',
     siteName: 'CarpTravel',
-    images: [{ url: '/ogp/logo.jpg' }, { url: '/ogp/logo.png' }],
+    images: [{ url: '/ogp/logo.jpg' }],
   },
 }
 
