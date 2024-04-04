@@ -6,6 +6,7 @@ import { Toaster } from 'react-hot-toast'
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL as string;
 
 export const metadata: Metadata = {
+
   metadataBase: new URL(baseUrl),
   title: 'CarpTravel',
   description: "Uncover Carpathian’s Secrets",
