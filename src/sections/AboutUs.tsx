@@ -1,11 +1,7 @@
 'use client'
 import React from 'react'
 import { motion } from "framer-motion";
-// import { SelectedPage } from '@/types/types'
 
-// type Props = {
-//   setSelectedPage: (value: SelectedPage) => void;
-// }
 
 const AboutUs = () => {
   return (
