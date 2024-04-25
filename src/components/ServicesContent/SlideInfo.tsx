@@ -1,10 +1,11 @@
 'use client';
 
 import React, { FC, useState, useEffect } from 'react';
+import { motion } from "framer-motion";
 import Image from 'next/image';
 import { ServicesSlideInfoProps } from '@/types/types';
 import SlideList from './SlideList';
-import { motion } from "framer-motion";
+import data from '@/data/common.json'
 
 const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, handleMenuButtonClick = () => { } }) => {
 
@@ -48,11 +49,11 @@ const SlideInfo: FC<ServicesSlideInfoProps> = ({ item, idx, activeSlide = 0, han
             visible: { opacity: 1, x: 0 },
           }}
 
-          className='title sm:leading-none lg:leading-none leading-[56px] self-center w-full sm:w-[483px] lg:w-[627px] '>We <span className='leading-none titleBold'>Offer</span>
+          className='title sm:leading-none lg:leading-none leading-[56px] self-center w-full sm:w-[483px] lg:w-[627px] '>{data.offer.title1}<span className='leading-none titleBold'>{data.offer.title2}</span>
         </motion.h2>
         <p className="my-0 h-full title text-end sm:text-start leading-none ">
           {id}
-          <span className="opacity-20">/05</span>
+          <span className="opacity-20">{data.offer.number}</span>
         </p>
       </div>
       <div className='flex flex-col sm:flex-row'>
