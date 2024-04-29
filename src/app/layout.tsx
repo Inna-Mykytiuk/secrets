@@ -55,7 +55,8 @@ export default function RootLayout({
               },
               duration: 2500,
             }}
-          /></main>
+          />
+        </main>
       </body>
     </html>
   );

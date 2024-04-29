@@ -6,7 +6,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/keyboard';
-import data from '../../data/gallery.json'
+import data from '@/data/gallery.json'
 import Button from './Button';
 
 const GallerySlider = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import contentData from '../../data/career.json'
+import contentData from '@/data/career.json'
 
 const ChooseUsContent = () => {
   return (
