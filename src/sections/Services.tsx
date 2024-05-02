@@ -32,7 +32,6 @@ const Services = () => {
   };
 
   return (
-
     <section
       className="bg-opacity-75 relative"
       id="services"
@@ -51,8 +50,7 @@ const Services = () => {
                 key={id}
                 className="bg-cover bg-center bg-opacity-75 py-[54px] sm:py-[64px] lg:py-[104px]"
                 style={{
-                  background: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.75)),url(${bg}) center / cover no-repeat
-                    `,
+                  background: `linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.75)),url(${bg}) center / cover no-repeat`,
                 }}
               >
                 <SlideInfo item={item} idx={swiper?.activeIndex} activeSlide={activeSlide} handleMenuButtonClick={handleMenuButtonClick} />
@@ -62,7 +60,6 @@ const Services = () => {
         })}
       </Swiper>
     </section>
-
   );
 };
 

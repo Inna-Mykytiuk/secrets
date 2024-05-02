@@ -59,8 +59,7 @@ const GallerySlider = () => {
       </Swiper>
 
       <div
-        className="absolute bottom-0 z-10 sm:left-[75px] sm:flex sm:gap-[459px] lg:left-[228px] 
-      lg:gap-[651px] smOnly:hidden"
+        className="absolute bottom-0 z-10 sm:left-[75px] sm:flex sm:gap-[459px] lg:left-[228px] lg:gap-[651px] smOnly:hidden"
       >
         <Button
           aria-label="Button previous"

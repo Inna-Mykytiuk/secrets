@@ -20,10 +20,7 @@ const ContactInfo: React.FC = () => {
           {phone.name}
         </span>
 
-        <span
-          className="textContent w-[164px] flex flex-col text-right text-sm font-normal leading-6
-            sm:text-base sm:leading-6"
-        >
+        <span className="textContent w-[164px] flex flex-col text-right text-sm font-normal leading-6 sm:text-base sm:leading-6">
           {phone.contacts.map(contact =>
             <a
               href={`tel:${contact}`}
@@ -38,16 +35,11 @@ const ContactInfo: React.FC = () => {
       </li>
 
       <li className="mb-[26px] flex flex-row-reverse gap-5 sm:mb-0 lg:mb-[124px]">
-        <span
-          className="textContentXS w-[81px] text-xs font-extralight leading-5 lg:mr-3 lg:w-[300px]"
-        >
+        <span className="textContentXS w-[81px] text-xs font-extralight leading-5 lg:mr-3 lg:w-[300px]">
           {email.name}
         </span>
 
-        <span
-          className="textContent text-right text-sm font-normal leading-6
-            sm:text-base sm:leading-6"
-        >
+        <span className="textContent text-right text-sm font-normal leading-6 sm:text-base sm:leading-6">
           {email.contacts.map(contact =>
             <a
               className="footer-link text-mainWhite text-sm sm:text-base lg:text-lg font-normal leading-5 lg:leading-6"
@@ -63,14 +55,10 @@ const ContactInfo: React.FC = () => {
       </li>
 
       <li className="flex gap-5 sm:ml-[90px] lg:flex-row-reverse">
-        <span
-          className="textContentXS w-[180px] text-right text-xs font-extralight leading-5 sm:w-auto lg:mr-3 lg:w-[300px] lg:text-left"
-        >
+        <span className="textContentXS w-[180px] text-right text-xs font-extralight leading-5 sm:w-auto lg:mr-3 lg:w-[300px] lg:text-left">
           {socials.name}
         </span>
-        <ul
-          className="w-[81px] text-sm font-normal leading-6
-            sm:text-base sm:leading-6 lg:text-end"
+        <ul className="w-[81px] text-sm font-normal leading-6 sm:text-base sm:leading-6 lg:text-end"
         >
           {socials.contacts.map(contact =>
             <li key={contact.title}>

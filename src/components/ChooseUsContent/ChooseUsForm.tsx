@@ -43,7 +43,6 @@ export const ChooseUsForm: React.FC = () => {
         noValidate
       >
         <div className="flex flex-col">
-
           {inputs.map(inputInfo =>
             <div className="mb-4 flex flex-col relative sm:mb-4 lg:mb-[26px]" key={inputInfo.id}>
               <FormInput
@@ -67,7 +66,6 @@ export const ChooseUsForm: React.FC = () => {
           <FormPolicy
             policy={policy}
             register={register}
-
           />
         }
 

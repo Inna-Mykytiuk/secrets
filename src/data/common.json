@@ -4,5 +4,7 @@
     "title2": "Offer",
     "number": "/05"
   },
-  "title": "Why Us ?"
+  "title": "Why Us ?",
+  "btnText": "Send",
+  "logoText": "CarpTravel"
 }

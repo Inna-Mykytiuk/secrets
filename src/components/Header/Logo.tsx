@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import data from '@/data/common.json'
 import logo from '../../../public/icons/logo.png'
 
 const Logo = () => {
@@ -14,7 +15,7 @@ const Logo = () => {
         className='w-[59px] h-[21px]'
         aria-label="logo"
       />
-      CarpTravel
+      {data.logoText}
     </Link>
   );
 };
