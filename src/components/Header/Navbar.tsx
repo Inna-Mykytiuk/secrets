@@ -1,8 +1,9 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import useMediaQuery from "../../hooks/useMediaQuery";
 import { Link } from "react-scroll";
+import data from '@/data/common.json'
+import useMediaQuery from "../../hooks/useMediaQuery";
 import Logo from "./Logo";
 import MobileMenu, { MobileMenuProps } from "../MobileMenu/MobileMenu";
 
@@ -90,12 +91,13 @@ const Navbar = () => {
               </div>
             </div>
           ) : (
-            <button
+              <button
+              type="button"
               aria-label="toggle menu button open"
               className="text-mainWhite textNormal cursor-pointer block uppercase"
               onClick={handleOpen}
             >
-              Menu
+              {data.textMenu}
             </button>
           )}
         </div>
