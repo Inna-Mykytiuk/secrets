@@ -7,5 +7,13 @@
   "title": "Why Us ?",
   "btnText": "Send",
   "logoText": "CarpTravel",
-  "textMenu": "Menu"
+  "textMenu": "Menu",
+  "links": [
+    { "text": "About", "path": "about" },
+    { "text": "Services", "path": "services" },
+    { "text": "Career", "path": "career" },
+    { "text": "Gallery", "path": "gallery" },
+    { "text": "Contacts", "path": "contacts" }
+  ]
+
 }

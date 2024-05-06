@@ -34,6 +34,8 @@ const Navbar = () => {
     document.body.style.overflow = 'auto';
   };
 
+  const links = data.links;
+
   return (
     <nav className='w-full pt-9 pb-9 sm:pt-[25px] sm:pb-[66px] lg:pt-6 lg:pb-[50px] absolute '>
 
@@ -43,51 +45,18 @@ const Navbar = () => {
           {isAboveMediumScreens ? (
             <div className='flexBetween'>
               <div className='flexCenter gap-6 md:gap-[56px] text-mainWhite textNormal tracking-normal'>
-                <Link
-                  to="about"
-                  smooth={true}
-                  href="#"
-                  ignoreCancelEvents={true}
-                  className="navLink footer-link"
-                >
-                  About
-                </Link>
-                <Link
-                  to="services"
-                  smooth={true}
-                  href="#"
-                  ignoreCancelEvents={true}
-                  className="navLink footer-link"
-                >
-                  Services
-                </Link>
-                <Link
-                  to="career"
-                  smooth={true}
-                  href="#"
-                  ignoreCancelEvents={true}
-                  className="navLink footer-link"
-                >
-                  Career
-                </Link>
-                <Link
-                  to="gallery"
-                  smooth={true}
-                  href="#"
-                  ignoreCancelEvents={true}
-                  className="navLink footer-link"
-                >
-                  Gallery
-                </Link>
-                <Link
-                  to="contacts"
-                  smooth={true}
-                  href="#"
-                  ignoreCancelEvents={true}
-                  className="navLink footer-link"
-                >
-                  Contacts
-                </Link>
+                {links.map((link, index) => (
+                  <Link
+                    key={index}
+                    to={link.path}
+                    smooth={true}
+                    href="#"
+                    ignoreCancelEvents={true}
+                    className="navLink footer-link"
+                  >
+                    {link.text}
+                  </Link>
+                ))}
               </div>
             </div>
           ) : (
