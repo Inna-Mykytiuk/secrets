@@ -14,8 +14,5 @@
     { "text": "Career", "path": "career" },
     { "text": "Gallery", "path": "gallery" },
     { "text": "Contacts", "path": "contacts" }
-  ],
-  "mainFormText":"Don't miss your opportunity! Fill out the form right now and join our team!",
-  "formLabel": "Full name"
-
+  ]
 }
