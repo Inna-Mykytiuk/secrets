@@ -14,5 +14,6 @@
     { "text": "Career", "path": "career" },
     { "text": "Gallery", "path": "gallery" },
     { "text": "Contacts", "path": "contacts" }
-  ]
+  ],
+  "bntClose": "Close"
 }

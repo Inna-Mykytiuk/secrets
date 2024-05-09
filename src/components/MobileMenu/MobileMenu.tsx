@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+import data from '@/data/common.json'
 
 export interface MobileMenuProps {
   onClose: () => void;
@@ -6,6 +7,8 @@ export interface MobileMenuProps {
 }
 
 const MobileMenu = ({ onClose, isOpen }: MobileMenuProps) => {
+
+  const links = data.links;
 
   return (
     <>
@@ -19,55 +22,22 @@ const MobileMenu = ({ onClose, isOpen }: MobileMenuProps) => {
               className="text-mainWhite textNormal cursor-pointer block uppercase"
               onClick={onClose}
             >
-              Close
+              {data.bntClose}
             </button>
           </div>
           <div className="mx-auto flex flex-col items-center justify-center gap-12 text-lg h-full text-mainWhite ">
-            <Link
-              to="about"
-              smooth={true}
-              href="#"
-              ignoreCancelEvents={true}
-              onClick={onClose}
-            >
-              About
-            </Link>
-            <Link
-              to="services"
-              smooth={true}
-              href="#"
-              ignoreCancelEvents={true}
-              onClick={onClose}
-            >
-              Services
-            </Link>
-            <Link
-              to="career"
-              smooth={true}
-              href="#"
-              ignoreCancelEvents={true}
-              onClick={onClose}
-            >
-              Career
-            </Link>
-            <Link
-              to="gallery"
-              smooth={true}
-              href="#"
-              ignoreCancelEvents={true}
-              onClick={onClose}
-            >
-              Gallery
-            </Link>
-            <Link
-              to="contacts"
-              smooth={true}
-              href="#"
-              ignoreCancelEvents={true}
-              onClick={onClose}
-            >
-              Contacts
-            </Link>
+            {links.map((link, index) => (
+              <Link
+                key={index}
+                to={link.path}
+                smooth={true}
+                href="#"
+                ignoreCancelEvents={true}
+                onClick={onClose}
+              >
+                {link.text}
+              </Link>
+            ))}
           </div>
         </div>
       )}
