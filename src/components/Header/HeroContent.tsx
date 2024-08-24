@@ -39,8 +39,8 @@ const HeroContent = () => {
             }}
 
             className='hidden sm:flex sm:flex-col'>
-            <p className='text-[67px] lg:text-[98px] font-thin text-mainWhite uppercase tracking-[3.9px] lg:tracking-[0.9px]'><span className='text-[67px] lg:text-[98px] font-medium'>{hero.title}</span>{hero.title1}</p>
-            <p className='text-base font-light text-mainWhite tracking-[21.9px] lg:tracking-[32.9px] mt-[-25px] uppercase'>{hero.title2}</p>
+            <p className='text-[67px] lg:text-[97px] font-thin text-mainWhite uppercase tracking-[3.9px] lg:tracking-[0.9px]'><span className='text-[67px] lg:text-[98px] font-medium'>{hero.title}</span>{hero.title1}</p>
+            <p className='text-base font-light text-mainWhite tracking-[21.9px] lg:tracking-[32.7px] mt-[-25px] uppercase'>{hero.title2}</p>
           </motion.div>
           <div>
             <p className='text mb-6 sm:mb-7'>{hero.description}</p>
